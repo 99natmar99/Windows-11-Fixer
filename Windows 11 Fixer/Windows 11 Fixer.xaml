@@ -1,0 +1,1344 @@
+﻿<Window x:Class="Windows_11_Fixer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Windows_11_Fixer"
+        mc:Ignorable="d"
+        Title="Windows 11 Fixer" Height="760" Width="1280"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
+
+
+
+    <Border Background="{DynamicResource Color1}"
+            CornerRadius="8"
+            BorderBrush="{DynamicResource BorderColor}"
+            BorderThickness="1">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border Background="{DynamicResource Color2}"
+                    CornerRadius="7,7,0,0"
+                    BorderBrush="{DynamicResource Color2}"
+                    BorderThickness="1"
+                    MouseDown="Border_MouseDown">
+            </Border>
+            
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Windows 11 Fixer"
+                           Foreground="{DynamicResource TextColor1}"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="4"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           FontSize="18"
+                           FontFamily="Fonts/#Sans"
+                           FontWeight="Medium"
+                           Margin="15,3,0,0"/>
+
+                <Button Content="✖"
+                        Foreground="{DynamicResource TextColor1}"
+                        FontWeight="Medium"
+                        FontSize="13"
+                        Grid.Column="27" Click="Button_Click"
+                        Margin="15,0,0,0">
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="TextElement.FontFamily" Value="Fonts/#Sans"/>
+                            <Setter Property="Background" Value="Red"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="DarkRed"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="22" Height="22"
+                                    CornerRadius="4,4,4,4"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"
+                                                  Margin="0,2,0,0"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
+
+                <Button Content="Light"
+                        Foreground="Black"
+                        FontWeight="Medium"
+                        FontSize="12"
+                        Grid.Column="25"
+                        HorizontalAlignment="Right" Click="Button_Click_1">
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="TextElement.FontFamily" Value="Fonts/#Sans"/>
+                            <Setter Property="Background" Value="{DynamicResource LightButton}"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#8D8D93"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="36" Height="22"
+                                    CornerRadius="4,0,0,4"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"
+                                                  Margin="0,1,0,0"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                    
+                </Button>
+
+                <Button Content="Dark"
+                        Foreground="White"
+                        FontWeight="Medium"
+                        FontSize="12"
+                        Grid.Column="26"
+                        HorizontalAlignment="Left" Click="Button_Click_2">
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="TextElement.FontFamily" Value="Fonts/#Sans"/>
+                            <Setter Property="Background" Value="{DynamicResource DarkButton}"/>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#8D8D93"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="36" Height="22"
+                                    CornerRadius="0,4,4,0"
+                                    Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"
+                                                  Margin="0,1,0,0"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
+
+                <StackPanel Grid.Row="0">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="22" Height="22"
+                               Margin="4,4,0,0"
+                               Source="Images/icon.png"
+                               RenderOptions.BitmapScalingMode="HighQuality"/>
+                    </StackPanel>
+                </StackPanel>
+
+            </Grid>
+
+            <StackPanel Grid.Row="1">
+                <StackPanel Orientation="Horizontal">
+                    <Border Width="406.67" Height="327.5"
+                            Background="{DynamicResource Color2}"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            CornerRadius="4"
+                            Margin="15,15,0,0">
+                        
+                        <StackPanel>
+
+                            <Border CornerRadius="4,4,0,0"
+                                    Background="{DynamicResource Button}">
+                                <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Height="30" Width="406.67">
+                                    <TextBlock Text="Taskbar"
+                                               HorizontalAlignment="Left"
+                                               VerticalAlignment="Top"
+                                               Margin="5,4,0,0"
+                                               Foreground="{DynamicResource TextColor1}"
+                                               FontFamily="Fonts/#Sans"
+                                               FontWeight="Bold"
+                                               FontSize="20"/>
+                                </StackPanel>
+                            </Border>
+
+                            <TextBlock Text="Location"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,7,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                             Name="Location_NC"
+                                             GroupName="TaskbarLocation"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Left"
+                                             Name="Location_Left"
+                                             GroupName="TaskbarLocation"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Center"
+                                             Name="Location_Center"
+                                             GroupName="TaskbarLocation"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Size"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                             Name="Size_NC"
+                                             GroupName="TaskbarSize"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Small"
+                                             Name="Size_Small"
+                                             GroupName="TaskbarSize"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Medium"
+                                             Name="Size_Medium"
+                                             GroupName="TaskbarSize"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Large"
+                                             Name="Size_Large"
+                                             GroupName="TaskbarSize"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Widgets Button"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                             Name="Widgets_NC"
+                                             GroupName="Widgets"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Disable"
+                                             Name="Widgets_Disable"
+                                             GroupName="Widgets"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Enable"
+                                             Name="Widgets_Enable"
+                                             GroupName="Widgets"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Chat Button"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                             Name="Chat_NC"
+                                             GroupName="Chat"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Disable"
+                                             Name="Chat_Disable"
+                                             GroupName="Chat"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Enable"
+                                             Name="Chat_Enable"
+                                             GroupName="Chat"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Install ElevenClock"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="Don't Install"
+                                             Name="ElevenClock_NC"
+                                             GroupName="ElevenClock"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Install"
+                                             Name="ElevenClock_Install"
+                                             GroupName="ElevenClock"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Margin="15,5,0,0">
+                                <Hyperlink NavigateUri="https://github.com/martinet101/ElevenClock"
+                                           RequestNavigate="Hyperlink_RequestNavigate">
+                                    Learn about ElevenClock
+                                </Hyperlink>
+                            </TextBlock>
+                        </StackPanel>
+                    </Border>
+
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel>
+                            <Border Width="406.66" Height="189.5"
+                            Background="{DynamicResource Color2}"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            CornerRadius="4"
+                            Margin="15,15,0,0">
+
+                                <StackPanel>
+                                    <Border CornerRadius="4,4,0,0"
+                                    Background="{DynamicResource Button}">
+                                        <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Height="30" Width="406.66">
+                                            <TextBlock Text="File and Folder Options"
+                                               HorizontalAlignment="Left"
+                                               VerticalAlignment="Top"
+                                               Margin="5,4,0,0"
+                                               Foreground="{DynamicResource TextColor1}"
+                                               FontFamily="Fonts/#Sans"
+                                               FontWeight="Bold"
+                                               FontSize="20"/>
+                                        </StackPanel>
+                                    </Border>
+
+                                    <TextBlock Text="Hidden Folders"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,7,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <RadioButton Content="No Change"
+                                             Name="Hidden_NC"
+                                             GroupName="Hidden"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                        <RadioButton Content="Visible"
+                                             Name="Hidden_Visible"
+                                             GroupName="Hidden"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                        <RadioButton Content="Hidden"
+                                             Name="Hidden_Hidden"
+                                             GroupName="Hidden"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                    </StackPanel>
+
+                                    <TextBlock Text="Known File Type Extensions"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <RadioButton Content="No Change"
+                                             Name="Extension_NC"
+                                             GroupName="Extension"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                        <RadioButton Content="Add"
+                                             Name="Extension_Visible"
+                                             GroupName="Extension"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                        <RadioButton Content="Remove"
+                                             Name="Extension_Hidden"
+                                             GroupName="Extension"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                    </StackPanel>
+
+                                    <TextBlock Text="Shortcut Icons"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <RadioButton Content="No Change"
+                                             Name="Shortcut_NC"
+                                             GroupName="Shortcut"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                        <RadioButton Content="None"
+                                             Name="Shortcut_None"
+                                             GroupName="Shortcut"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                        <RadioButton Content="Normal"
+                                             Name="Shortcut_Normal"
+                                             GroupName="Shortcut"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                        <RadioButton Content="Large"
+                                             Name="Shortcut_Large"
+                                             GroupName="Shortcut"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                    </StackPanel>
+                                    
+                                </StackPanel>
+                                
+                            </Border>
+                            
+                        </StackPanel>
+
+                        <Border Width="406.66" Height="138"
+                            Background="{DynamicResource Color2}"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            CornerRadius="4"
+                            Margin="15,15,0,0">
+
+                            <StackPanel>
+                                <Border CornerRadius="4,4,0,0"
+                                    Background="{DynamicResource Button}">
+                                    <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Height="30" Width="406.66">
+                                        <TextBlock Text="Install Internet Browser"
+                                               HorizontalAlignment="Left"
+                                               VerticalAlignment="Top"
+                                               Margin="5,4,0,0"
+                                               Foreground="{DynamicResource TextColor1}"
+                                               FontFamily="Fonts/#Sans"
+                                               FontWeight="Bold"
+                                               FontSize="20"/>
+                                    </StackPanel>
+                                </Border>
+
+                                <TextBlock Text="Mozilla Firefox"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,7,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                                <StackPanel Orientation="Horizontal">
+                                    <RadioButton Content="Don't Install"
+                                             Name="Firefox_NC"
+                                             GroupName="Firefox"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                    <RadioButton Content="Install"
+                                             Name="Firefox_Install"
+                                             GroupName="Firefox"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                </StackPanel>
+
+                                <TextBlock Text="Google Chrome"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                                <StackPanel Orientation="Horizontal">
+                                    <RadioButton Content="Don't Install"
+                                             Name="Chrome_NC"
+                                             GroupName="Chrome"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                    <RadioButton Content="Install"
+                                             Name="Chrome_Install"
+                                             GroupName="Chrome"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                </StackPanel>
+                                
+                            </StackPanel>
+
+                        </Border>
+                        
+                    </StackPanel>
+
+                    <Border Width="406.67" Height="342.5"
+                            Background="{DynamicResource Color2}"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            CornerRadius="4"
+                            Margin="15,15,0,0">
+
+                        <StackPanel>
+                            <Border CornerRadius="4,4,0,0"
+                                    Background="{DynamicResource Button}">
+                                <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Height="30" Width="406.67">
+                                    <TextBlock Text="Windows Settings"
+                                               HorizontalAlignment="Left"
+                                               VerticalAlignment="Top"
+                                               Margin="5,4,0,0"
+                                               Foreground="{DynamicResource TextColor1}"
+                                               FontFamily="Fonts/#Sans"
+                                               FontWeight="Bold"
+                                               FontSize="20"/>
+                                </StackPanel>
+                            </Border>
+
+                            <TextBlock Text="Suggested Security Settings"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,7,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                             Name="Ssettings_NC"
+                                             GroupName="Ssettings"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Apply"
+                                             Name="Ssettings_Apply"
+                                             GroupName="Ssettings"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                            </StackPanel>
+
+                            <TextBlock Margin="15,5,0,0">
+                                <Hyperlink Click="Hyperlink_Click">
+                                    Learn about Suggested Security Settings
+                                </Hyperlink>
+                            </TextBlock>
+                            
+                            <TextBlock Text="Optional Privacy Settings"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                             Name="Osettings_NC"
+                                             GroupName="Osettings"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Apply"
+                                             Name="Osettings_Apply"
+                                             GroupName="Osettings"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                            </StackPanel>
+
+                            <TextBlock Margin="15,5,0,0">
+                                <Hyperlink Click="Hyperlink_Click">
+                                    Learn about Optional Privacy Settings
+                                </Hyperlink>
+                            </TextBlock>
+                            
+                            <TextBlock Text="System Theme"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                             Name="STheme_NC"
+                                             GroupName="STheme"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Dark"
+                                             Name="STheme_Dark"
+                                             GroupName="STheme"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Light"
+                                             Name="STheme_Light"
+                                             GroupName="STheme"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                            </StackPanel>
+
+                            <TextBlock Text="Application Theme"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                             Name="ATheme_NC"
+                                             GroupName="ATheme"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Dark"
+                                             Name="ATheme_Dark"
+                                             GroupName="ATheme"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Light"
+                                             Name="ATheme_Light"
+                                             GroupName="ATheme"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                            </StackPanel>
+
+                            <TextBlock Text="System Transparency"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                             Name="Transparency_NC"
+                                             GroupName="Transparency"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Disable"
+                                             Name="Transparency_Disable"
+                                             GroupName="Transparency"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Enable"
+                                             Name="Transparency_Enable"
+                                             GroupName="Transparency"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                            </StackPanel>
+
+                        </StackPanel>
+                    </Border>
+                    
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel>
+                            <Border Width="406.67" Height="197"
+                            Background="{DynamicResource Color2}"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            CornerRadius="4"
+                            Margin="15,0,0,0">
+
+                                <StackPanel>
+                                    <Border CornerRadius="4,4,0,0"
+                                    Background="{DynamicResource Button}">
+                                        <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Height="30" Width="406.67">
+                                            <TextBlock Text="Right-Click Menu"
+                                               HorizontalAlignment="Left"
+                                               VerticalAlignment="Top"
+                                               Margin="5,4,0,0"
+                                               Foreground="{DynamicResource TextColor1}"
+                                               FontFamily="Fonts/#Sans"
+                                               FontWeight="Bold"
+                                               FontSize="20"/>
+                                        </StackPanel>
+
+                                    </Border>
+
+                                    <TextBlock Text="Context Menu Style"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,7,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <RadioButton Content="No Change"
+                                             Name="Context_NC"
+                                             GroupName="Context"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                        <RadioButton Content="Windows 10"
+                                             Name="Context_Win10"
+                                             GroupName="Context"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                        <RadioButton Content="Windows 11"
+                                             Name="Context_Win11"
+                                             GroupName="Context"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                    </StackPanel>
+
+                                    <TextBlock Text="Take Ownership"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <RadioButton Content="No Change"
+                                             Name="TakeOwn_NC"
+                                             GroupName="TakeOwn"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                        <RadioButton Content="Add"
+                                             Name="TakeOwn_Add"
+                                             GroupName="TakeOwn"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                        <RadioButton Content="Remove"
+                                             Name="TakeOwn_Remove"
+                                             GroupName="TakeOwn"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                    </StackPanel>
+
+                                    <TextBlock Text="Control Panel Shortcut"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <RadioButton Content="No Change"
+                                             Name="CPanel_NC"
+                                             GroupName="CPanel"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                        <RadioButton Content="Add"
+                                             Name="CPanel_Add"
+                                             GroupName="CPanel"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                        <RadioButton Content="Remove"
+                                             Name="CPanel_Remove"
+                                             GroupName="CPanel"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                    </StackPanel>
+
+                                </StackPanel>
+
+                            </Border>
+                        </StackPanel>
+
+                        <Border Width="406.67" Height="145.5"
+                                Background="{DynamicResource Color2}"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top"
+                                CornerRadius="4"
+                                Margin="15,15,0,0">
+                            <StackPanel>
+                                <Border CornerRadius="4,4,0,0"
+                                    Background="{DynamicResource Button}">
+                                    <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Height="30" Width="406.67">
+                                        <TextBlock Text="File Explorer"
+                                               HorizontalAlignment="Left"
+                                               VerticalAlignment="Top"
+                                               Margin="5,4,0,0"
+                                               Foreground="{DynamicResource TextColor1}"
+                                               FontFamily="Fonts/#Sans"
+                                               FontWeight="Bold"
+                                               FontSize="20"/>
+                                    </StackPanel>
+
+                                </Border>
+
+                                <TextBlock Text="Compact View"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,7,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                                <StackPanel Orientation="Horizontal">
+                                    <RadioButton Content="No Change"
+                                             Name="Compact_NC"
+                                             GroupName="Compact"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                    <RadioButton Content="Enable"
+                                             Name="Compact_Enable"
+                                             GroupName="Compact"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                    <RadioButton Content="Disable"
+                                             Name="Compact_Disable"
+                                             GroupName="Compact"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                </StackPanel>
+
+                                <TextBlock Text="Opening Location"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                                <StackPanel Orientation="Horizontal">
+                                    <RadioButton Content="No Change"
+                                             Name="OpenLocation_NC"
+                                             GroupName="OpenLocation"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                    <RadioButton Content="This PC"
+                                             Name="OpenLocation_ThisPC"
+                                             GroupName="OpenLocation"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                    <RadioButton Content="Quick access"
+                                             Name="OpenLocation_QA"
+                                             GroupName="OpenLocation"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                </StackPanel>
+
+                            </StackPanel>
+                        </Border>
+
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical">
+                        <Border Width="406.66" Height="297.5"
+                            Background="{DynamicResource Color2}"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            CornerRadius="4"
+                            Margin="15,15,0,0">
+
+                            <StackPanel>
+                                <Border CornerRadius="4,4,0,0"
+                                        Background="{DynamicResource Button}">
+                                    <StackPanel Orientation="Horizontal"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Top"
+                                                Height="30" Width="406.66">
+                                        <TextBlock Text="Recommended Software"
+                                                   HorizontalAlignment="Left"
+                                                   VerticalAlignment="Top"
+                                                   Margin="5,4,0,0"
+                                                   Foreground="{DynamicResource TextColor1}"
+                                                   FontFamily="Fonts/#Sans"
+                                                   FontWeight="Bold"
+                                                   FontSize="20"/>
+                                    </StackPanel>
+                                </Border>
+
+                                <TextBlock Text="StartAllBack (Free Trial)"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,7,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                                <StackPanel Orientation="Horizontal">
+                                    <RadioButton Content="Don't Install"
+                                             Name="StartAllBack_NC"
+                                             GroupName="StartAllBack"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                    <RadioButton Content="Install"
+                                             Name="StartAllBack_Install"
+                                             GroupName="StartAllBack"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                </StackPanel>
+
+                                <TextBlock Margin="15,5,0,0">
+                                    <Hyperlink NavigateUri="https://www.startallback.com/"
+                                               RequestNavigate="Hyperlink_RequestNavigate">
+                                        Learn about StartAllBack
+                                    </Hyperlink>
+                                </TextBlock>
+
+                                <TextBlock Text="Microsoft PowerToys"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                                <StackPanel Orientation="Horizontal">
+                                    <RadioButton Content="Don't Install"
+                                             Name="PowerToys_NC"
+                                             GroupName="PowerToys"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                    <RadioButton Content="Install"
+                                             Name="PowerToys_Install"
+                                             GroupName="PowerToys"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                </StackPanel>
+
+                                <TextBlock Margin="15,5,0,0">
+                                    <Hyperlink NavigateUri="https://docs.microsoft.com/en-us/windows/powertoys/"
+                                               RequestNavigate="Hyperlink_RequestNavigate">
+                                        Learn about Microsoft PowerToys
+                                    </Hyperlink>
+                                </TextBlock>
+
+                            </StackPanel>
+
+                        </Border>
+
+                        <Button Content="Fix Windows"
+                        Foreground="{DynamicResource TextColor1}"
+                        FontWeight="Medium"
+                        FontSize="16"
+                        Grid.Column="25"
+                        HorizontalAlignment="Center"
+                        Margin="0,15,0,0" Click="Button_Click_3">
+
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="TextElement.FontFamily" Value="Fonts/#Sans"/>
+                                    <Setter Property="Background" Value="{DynamicResource Button}"/>
+                                    <Setter Property="Cursor" Value="Hand"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#8D8D93"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="112" Height="30"
+                                    CornerRadius="4"
+                                    Background="{TemplateBinding Background}">
+                                        <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"
+                                                  Margin="0,1,0,0"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+
+                        </Button>
+
+                    </StackPanel>
+                    
+                    <Border Width="406.67" Height="342.5"
+                            Background="{DynamicResource Color2}"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            CornerRadius="4"
+                            Margin="15,15,0,0">
+
+                        <StackPanel>
+                            <Border CornerRadius="4,4,0,0"
+                                    Background="{DynamicResource Button}">
+                                <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Height="30" Width="406.66">
+                                    <TextBlock Text="Other"
+                                               HorizontalAlignment="Left"
+                                               VerticalAlignment="Top"
+                                               Margin="5,4,0,0"
+                                               Foreground="{DynamicResource TextColor1}"
+                                               FontFamily="Fonts/#Sans"
+                                               FontWeight="Bold"
+                                               FontSize="20"/>
+                                </StackPanel>
+                            </Border>
+
+                            <TextBlock Text="Allow Windows to Search Online"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,7,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                             Name="WSearch_NC"
+                                             GroupName="WSearch"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Prohibit"
+                                             Name="WSearch_Prohibit"
+                                             GroupName="WSearch"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Allow"
+                                             Name="WSearch_Allow"
+                                             GroupName="WSearch"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                            </StackPanel>
+
+                            <TextBlock Text="Widgets Service"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                             Name="WService_NC"
+                                             GroupName="WService"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Disable"
+                                             Name="WService_Disable"
+                                             GroupName="WService"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Enable"
+                                             Name="WService_Enable"
+                                             GroupName="WService"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                            </StackPanel>
+                            
+                            <TextBlock Text="Uninstall Cortana"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                             Name="Cortana_NC"
+                                             GroupName="Cortana"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                             Name="Cortana_Uninstall"
+                                             GroupName="Cortana"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                            </StackPanel>
+
+                        </StackPanel>
+
+                    </Border>
+
+                </StackPanel>
+
+            </StackPanel>
+            
+        </Grid>
+
+    </Border>
+    
+</Window>

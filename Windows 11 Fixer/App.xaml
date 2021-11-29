@@ -1,0 +1,45 @@
+﻿<Application x:Class="Windows_11_Fixer.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Windows_11_Fixer"
+             StartupUri="Windows 11 Fixer.xaml">
+    <Application.Resources>
+        <!-- Colorful Theme
+        <SolidColorBrush x:Key="Color1">#2F67B1</SolidColorBrush>
+        <SolidColorBrush x:Key="Color2">Black</SolidColorBrush>
+        <SolidColorBrush x:Key="TextColor1">White</SolidColorBrush>
+        <SolidColorBrush x:Key="TextColor2">#8D8D93</SolidColorBrush>
+        -->
+
+        <!-- Dark Theme
+        <SolidColorBrush x:Key="Color1">Black</SolidColorBrush>
+        <SolidColorBrush x:Key="Color2">#1C1C1E</SolidColorBrush>
+        <SolidColorBrush x:Key="TextColor1">White</SolidColorBrush>
+        <SolidColorBrush x:Key="TextColor2">#8D8D93</SolidColorBrush>
+        <SolidColorBrush x:Key="BorderColor">#8D8D93</SolidColorBrush>
+        -->
+
+        <!-- Light Theme
+        <SolidColorBrush x:Key="Color1">#FBFBFC</SolidColorBrush>
+        <SolidColorBrush x:Key="Color2">White</SolidColorBrush>
+        <SolidColorBrush x:Key="TextColor1">Black</SolidColorBrush>
+        <SolidColorBrush x:Key="TextColor2">#8D8D93</SolidColorBrush>
+        <SolidColorBrush x:Key="BorderColor">#F2F2F6</SolidColorBrush>
+        -->
+
+        <!--
+        <SolidColorBrush x:Key="Color1" Color="#FBFBFC"></SolidColorBrush>
+        <SolidColorBrush x:Key="Color2">White</SolidColorBrush>
+        <SolidColorBrush x:Key="TextColor1">Black</SolidColorBrush>
+        <SolidColorBrush x:Key="TextColor2">#8D8D93</SolidColorBrush>
+        <SolidColorBrush x:Key="BorderColor">#F2F2F6</SolidColorBrush>
+        -->
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Windows 11 Fixer;component/Dictionaries/LightTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+       
+    </Application.Resources>
+</Application>

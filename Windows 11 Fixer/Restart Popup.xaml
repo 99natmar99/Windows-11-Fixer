@@ -1,0 +1,197 @@
+﻿<Window x:Class="Windows_11_Fixer.Restart_Popup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Windows_11_Fixer"
+        mc:Ignorable="d"
+        Title="Restart_Popup" Height="250" Width="500"
+        ShowInTaskbar="False"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True"
+        Topmost="True">
+    
+    
+    <Border Background="{DynamicResource Color1}"
+            CornerRadius="8"
+            BorderBrush="{DynamicResource BorderColor}"
+            BorderThickness="1">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <Border Background="{DynamicResource Color2}"
+                    CornerRadius="7,7,0,0"
+                    BorderBrush="{DynamicResource Color2}"
+                    BorderThickness="1"
+                    MouseDown="Border_MouseDown">
+            </Border>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="Restart Popup"
+                           Foreground="{DynamicResource TextColor1}"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="3"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           FontSize="18"
+                           FontFamily="Fonts/#Sans"
+                           FontWeight="Medium"
+                           Margin="8,2,0,0"/>
+
+                    <Button Content="✖"
+                        Foreground="{DynamicResource TextColor1}"
+                        FontWeight="Medium"
+                        FontSize="11"
+                        Grid.Column="27" Click="Button_Click"
+                        Margin="12,0,0,0">
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="TextElement.FontFamily" Value="Fonts/#Sans"/>
+                                <Setter Property="Background" Value="Red"/>
+                                <Setter Property="Cursor" Value="Hand"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="DarkRed"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="22" Height="22"
+                                    CornerRadius="4,4,4,4"
+                                    Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"
+                                                  Margin="0,2,0,0"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+
+                    </Button>
+
+                </Grid>
+
+            <StackPanel Grid.Row="1">
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Margin="0,40,0,0">
+                    <TextBlock Text="Some of the changes made require your computer to restart in order for them to take affect!"
+                           Foreground="{DynamicResource TextColor1}"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           TextWrapping="Wrap"
+                           FontFamily="Fonts/#Sans"
+                           FontWeight="Medium"
+                           FontSize="18"
+                           Height="60" Width="400"
+                           TextAlignment="Center"/>
+                </StackPanel>
+                
+            </StackPanel>
+
+            <StackPanel Grid.Row="2">
+                <StackPanel Orientation="Horizontal">
+
+                    <Button Content="Restart Now"
+                        Foreground="{DynamicResource TextColor1}"
+                        FontWeight="Medium"
+                        FontSize="16"
+                        Grid.Column="25"
+                        HorizontalAlignment="Center"
+                        Margin="100.5,25,0,0" Click="Button_Click_1">
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="TextElement.FontFamily" Value="Fonts/#Sans"/>
+                                <Setter Property="Background" Value="{DynamicResource Button}"/>
+                                <Setter Property="Cursor" Value="Hand"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#8D8D93"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="112" Height="30"
+                                    CornerRadius="4"
+                                    Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"
+                                                  Margin="0,1,0,0"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+
+                    </Button>
+
+                    <Button Content="Restart Later"
+                        Foreground="{DynamicResource TextColor1}"
+                        FontWeight="Medium"
+                        FontSize="16"
+                        Grid.Column="25"
+                        HorizontalAlignment="Center"
+                        Margin="75,25,0,0" Click="Button_Click_2">
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="TextElement.FontFamily" Value="Fonts/#Sans"/>
+                                <Setter Property="Background" Value="{DynamicResource Button}"/>
+                                <Setter Property="Cursor" Value="Hand"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#8D8D93"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="112" Height="30"
+                                    CornerRadius="4"
+                                    Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                  HorizontalAlignment="Center"
+                                                  Margin="0,1,0,0"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+
+                    </Button>
+                    
+                </StackPanel>
+            </StackPanel>
+
+        </Grid>
+
+    </Border>
+</Window>

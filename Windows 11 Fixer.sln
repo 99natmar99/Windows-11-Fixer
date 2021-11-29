@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Windows 11 Fixer", "Windows 11 Fixer\Windows 11 Fixer.csproj", "{0EC8C9B2-2AC5-40E2-83E7-A821365112F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EC8C9B2-2AC5-40E2-83E7-A821365112F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC8C9B2-2AC5-40E2-83E7-A821365112F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC8C9B2-2AC5-40E2-83E7-A821365112F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC8C9B2-2AC5-40E2-83E7-A821365112F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A696A5E-9EB5-4763-A2C2-0ADB6D24CB78}
+	EndGlobalSection
+EndGlobal
