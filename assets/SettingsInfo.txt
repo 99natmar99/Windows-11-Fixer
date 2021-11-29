@@ -1,0 +1,183 @@
+Recommended Security Settings
+
+Settings -> System -> Notifications -> Offer suggestions on how I can set up my device
+Disable: HKCU\Software\Microsoft\Windows\CurrentVersion\UserProfileEngagement
+	ScoobeSystemSettingEnabled	Set DWORD = 0
+Enable: HKCU\Software\Microsoft\Windows\CurrentVersion\UserProfileEngagement
+	ScoobeSystemSettingEnabled	Set DWORD = 1
+
+Settings -> System -> Notifications -> Get tips and suggestions when I use Windows
+Disable: HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager
+	SubscribedContent-338389Enabled	Set DWORD = 0
+Enable: HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager
+	SubscribedContent-338389Enabled	Set DWORD = 1
+
+Settings -> Privacy & security -> General -> Let apps show me personalized ads by using my advertising ID
+Disable: HKCU\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo
+	Enabled		Set DWORD = 0
+	HKCU\Software\Microsoft\Windows\CurrentVersion\CPSS\Store\AdvertisingInfo
+	Value		Set DWORD = 0
+
+Enable: HKCU\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo
+	Enabled		Set DWORD = 1
+	HKCU\Software\Microsoft\Windows\CurrentVersion\CPSS\Store\AdvertisingInfo
+	Value		Set DWORD = 1
+
+Settings -> Privacy & security -> General -> Show me suggested content in the Settings app
+Disable: HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager
+	SubscribedContent-353696Enabled	Set DWORD = 0
+	HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager
+	SubscribedContent-353694Enabled	Set DWORD = 0
+	HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager
+	SubscribedContent-338393Enabled	Set DWORD = 0
+
+Enable: HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager
+	SubscribedContent-353696Enabled	Set DWORD = 1
+	HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager
+	SubscribedContent-353694Enabled	Set DWORD = 1
+	HKCU\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager
+	SubscribedContent-338393Enabled	Set DWORD = 1
+
+Settings -> Privacy & security -> Diagnostics & feedback -> Send optional diagnostic data
+Disable: HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection
+	AllowTelemetry				Set DWORD = 1
+	HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection
+	MaxTelemetryAllowed			Set DWORD = 1
+	HKCU\Software\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack
+	ShowedToastAtLevel			Set DWORD = 1
+
+Enable: HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection
+	AllowTelemetry				Set DWORD = 3
+	HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection
+	MaxTelemetryAllowed			Set DWORD = 3
+	HKCU\Software\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack
+	ShowedToastAtLevel			Set DWORD = 3
+Settings -> Privacy & security -> Diagnostics & feedback -> Tailored experiences
+Disable: HKCU\Software\Microsoft\Windows\CurrentVersion\Privacy
+       TailoredExperiencesWithDiagnosticDataEnabled		Set DWORD = 0
+
+Enable: HKCU\Software\Microsoft\Windows\CurrentVersion\Privacy
+       TailoredExperiencesWithDiagnosticDataEnabled		Set DWORD = 1
+
+Settings -> Privacy & security -> Diagnostics & feedback -> Feedback frequency
+Set to “Never”: HKCU\Software\Microsoft\Siuf\Rules
+	NumberOfSIUFInPeriod					Set DWORD = 0
+
+Set to “Automatically”: Delete registry key
+
+
+
+
+
+Optional Privacy Settings
+
+Settings -> Privacy & security -> Location -> Location services
+Disable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location
+	Value							Set SZ = Deny
+HKLM\Software\Microsoft\Windows NT\CurrentVersion\Sensor\Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}
+	SensorPermissionState					Set DWORD = 0
+
+Enable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location
+	Value							Set SZ = Allow
+HKLM\Software\Microsoft\Windows NT\CurrentVersion\Sensor\Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}
+	SensorPermissionState					Set DWORD = 1
+
+Settings -> Privacy & security -> Camera -> Camera access
+Disable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam
+	Value							Set SZ = Deny
+
+Enable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam
+	Value							Set SZ = Allow
+
+Settings -> Privacy & security -> Microphone -> Microphone access
+Disable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone
+	Value							Set SZ = Deny
+
+Enable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone
+	Value							Set SZ = Allow
+
+Settings -> Privacy & security -> Voice activation -> Let apps access voice activation services
+Disable: HKCU\Software\Microsoft\Speech_OneCore\Settings\VoiceActivation\UserPreferenceForAllApps
+	AgentActivationEnabled					Set DWORD = 0
+
+Enable: HKCU\Software\Microsoft\Speech_OneCore\Settings\VoiceActivation\UserPreferenceForAllApps
+	AgentActivationEnabled					Set DWORD = 1
+
+Settings -> Privacy & security -> Notifications -> Notification access
+Disable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userNotificationListener
+	Value							Set SZ = Deny
+
+Enable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userNotificationListener
+	Value							Set SZ = Allow
+
+Settings -> Privacy & security -> Account info -> Account info access
+Disable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userAccountInformation
+	Value							Set SZ = Deny
+
+Enable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userAccountInformation
+	Value							Set SZ = Allow
+
+Settings -> Privacy & security -> Contacts -> Contacts access
+Disable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\contacts
+	Value							Set SZ = Deny
+
+Enable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\contacts
+	Value							Set SZ = Allow
+
+Settings -> Privacy & security -> Phone calls -> Phone call access
+Disable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCall
+	Value							Set SZ = Deny
+
+Enable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCall
+	Value							Set SZ = Allow
+
+Settings -> Privacy & security -> Call history -> Call history access
+Disable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCallHistory
+	Value							Set SZ = Deny
+
+Enable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\phoneCallHistory
+	Value							Set SZ = Allow
+
+Settings -> Privacy & security -> Tasks -> Tasks access
+Disable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userDataTasks
+	Value							Set SZ = Deny
+
+Enable: HKLM\Software\ HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userDataTasks
+	Value							Set SZ = Allow
+
+
+
+
+
+Settings -> Privacy & security -> Messaging -> Messaging access
+Disable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\chat
+	Value							Set SZ = Deny
+
+Enable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\chat
+	Value							Set SZ = Allow
+
+Settings -> Privacy & security -> Radios -> Radio control access
+Disable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\radios
+	Value							Set SZ = Deny
+
+Enable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\radios
+	Value							Set SZ = Allow
+
+Settings -> Privacy & security -> Other devices -> Communicate with unpaired devices
+Disable: HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetoothSync
+	Value							Set SZ = Deny
+
+Enable: HKLM\Software\ HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetoothSync
+	Value							Set SZ = Allow
+
+
+
+
+
+Settings -> Privacy & security -> App diagnostics -> App diagnostic access
+HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appDiagnostics
+	Value							Set SZ = Deny
+
+Enable: HKLM\Software\ HKLM\Software\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\appDiagnostics
+	Value							Set SZ = Allow
+
