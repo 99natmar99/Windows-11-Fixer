@@ -11,8 +11,8 @@
 - Additional options to enhance your Windows 11 experience.
 
 ## Images
-![screenshot](https://github.com/99natmar99/Windows-11-Fixer/blob/master/images/light.PNGG)
-![screenshot](https://github.com/99natmar99/Windows-11-Fixer/blob/master/images/dark.PNGG)
+![screenshot](https://github.com/99natmar99/Windows-11-Fixer/blob/master/web-images/light.PNG)
+![screenshot](https://github.com/99natmar99/Windows-11-Fixer/blob/master/web-images/dark.PNG)
 
 ## Download
 [Download](https://github.com/99natmar99/Windows-11-Fixer/releases)
