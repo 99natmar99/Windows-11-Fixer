@@ -1383,7 +1383,7 @@
                                              Foreground="{DynamicResource TextColor1}"
                                              FontFamily="Fonts/#Sans"
                                              FontSize="14"/>
-                                <RadioButton Content="Install"
+                                <RadioButton Content="Download"
                                              Name="TIW11_Install"
                                              GroupName="TIW11"
                                              Margin="25,5,0,0"
