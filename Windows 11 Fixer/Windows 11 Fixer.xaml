@@ -1084,7 +1084,7 @@
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Top"
                                                 Height="30" Width="406.66">
-                                        <TextBlock Text="Recommended Software"
+                                        <TextBlock Text="Other"
                                                    HorizontalAlignment="Left"
                                                    VerticalAlignment="Top"
                                                    Margin="5,4,0,0"
@@ -1095,7 +1095,7 @@
                                     </StackPanel>
                                 </Border>
 
-                                <TextBlock Text="StartAllBack (Free Trial)"
+                                <TextBlock Text="Allow Windows to Search Online"
                                        HorizontalAlignment="Left"
                                        VerticalAlignment="Top"
                                        Margin="15,7,0,0"
@@ -1104,9 +1104,9 @@
                                        FontWeight="Medium"
                                        FontSize="16"/>
                                 <StackPanel Orientation="Horizontal">
-                                    <RadioButton Content="Don't Install"
-                                             Name="StartAllBack_NC"
-                                             GroupName="StartAllBack"
+                                    <RadioButton Content="No Change"
+                                             Name="WSearch_NC"
+                                             GroupName="WSearch"
                                              IsChecked="True"
                                              HorizontalAlignment="Left"
                                              VerticalAlignment="Top"
@@ -1114,23 +1114,23 @@
                                              Foreground="{DynamicResource TextColor1}"
                                              FontFamily="Fonts/#Sans"
                                              FontSize="14"/>
-                                    <RadioButton Content="Install"
-                                             Name="StartAllBack_Install"
-                                             GroupName="StartAllBack"
+                                    <RadioButton Content="Prohibit"
+                                             Name="WSearch_Prohibit"
+                                             GroupName="WSearch"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                    <RadioButton Content="Allow"
+                                             Name="WSearch_Allow"
+                                             GroupName="WSearch"
                                              Margin="25,5,0,0"
                                              Foreground="{DynamicResource TextColor1}"
                                              FontFamily="Fonts/#Sans"
                                              FontSize="14"/>
                                 </StackPanel>
 
-                                <TextBlock Margin="15,5,0,0">
-                                    <Hyperlink NavigateUri="https://www.startallback.com/"
-                                               RequestNavigate="Hyperlink_RequestNavigate">
-                                        Learn about StartAllBack
-                                    </Hyperlink>
-                                </TextBlock>
-
-                                <TextBlock Text="Microsoft PowerToys"
+                                <TextBlock Text="Widgets Service"
                                        HorizontalAlignment="Left"
                                        VerticalAlignment="Top"
                                        Margin="15,12,0,0"
@@ -1139,9 +1139,9 @@
                                        FontWeight="Medium"
                                        FontSize="16"/>
                                 <StackPanel Orientation="Horizontal">
-                                    <RadioButton Content="Don't Install"
-                                             Name="PowerToys_NC"
-                                             GroupName="PowerToys"
+                                    <RadioButton Content="No Change"
+                                             Name="WService_NC"
+                                             GroupName="WService"
                                              IsChecked="True"
                                              HorizontalAlignment="Left"
                                              VerticalAlignment="Top"
@@ -1149,21 +1149,49 @@
                                              Foreground="{DynamicResource TextColor1}"
                                              FontFamily="Fonts/#Sans"
                                              FontSize="14"/>
-                                    <RadioButton Content="Install"
-                                             Name="PowerToys_Install"
-                                             GroupName="PowerToys"
+                                    <RadioButton Content="Disable"
+                                             Name="WService_Disable"
+                                             GroupName="WService"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                    <RadioButton Content="Enable"
+                                             Name="WService_Enable"
+                                             GroupName="WService"
                                              Margin="25,5,0,0"
                                              Foreground="{DynamicResource TextColor1}"
                                              FontFamily="Fonts/#Sans"
                                              FontSize="14"/>
                                 </StackPanel>
 
-                                <TextBlock Margin="15,5,0,0">
-                                    <Hyperlink NavigateUri="https://docs.microsoft.com/en-us/windows/powertoys/"
-                                               RequestNavigate="Hyperlink_RequestNavigate">
-                                        Learn about Microsoft PowerToys
-                                    </Hyperlink>
-                                </TextBlock>
+                                <TextBlock Text="Uninstall Cortana"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                                <StackPanel Orientation="Horizontal">
+                                    <RadioButton Content="No Change"
+                                             Name="Cortana_NC"
+                                             GroupName="Cortana"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                    <RadioButton Content="Uninstall"
+                                             Name="Cortana_Uninstall"
+                                             GroupName="Cortana"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                </StackPanel>
 
                             </StackPanel>
 
@@ -1220,7 +1248,7 @@
                                             HorizontalAlignment="Left"
                                             VerticalAlignment="Top"
                                             Height="30" Width="406.66">
-                                    <TextBlock Text="Other"
+                                    <TextBlock Text="Recommended Software"
                                                HorizontalAlignment="Left"
                                                VerticalAlignment="Top"
                                                Margin="5,4,0,0"
@@ -1231,7 +1259,7 @@
                                 </StackPanel>
                             </Border>
 
-                            <TextBlock Text="Allow Windows to Search Online"
+                            <TextBlock Text="StartAllBack (Free Trial)"
                                        HorizontalAlignment="Left"
                                        VerticalAlignment="Top"
                                        Margin="15,7,0,0"
@@ -1240,9 +1268,9 @@
                                        FontWeight="Medium"
                                        FontSize="16"/>
                             <StackPanel Orientation="Horizontal">
-                                <RadioButton Content="No Change"
-                                             Name="WSearch_NC"
-                                             GroupName="WSearch"
+                                <RadioButton Content="Don't Install"
+                                             Name="StartAllBack_NC"
+                                             GroupName="StartAllBack"
                                              IsChecked="True"
                                              HorizontalAlignment="Left"
                                              VerticalAlignment="Top"
@@ -1250,23 +1278,23 @@
                                              Foreground="{DynamicResource TextColor1}"
                                              FontFamily="Fonts/#Sans"
                                              FontSize="14"/>
-                                <RadioButton Content="Prohibit"
-                                             Name="WSearch_Prohibit"
-                                             GroupName="WSearch"
-                                             Margin="25,5,0,0"
-                                             Foreground="{DynamicResource TextColor1}"
-                                             FontFamily="Fonts/#Sans"
-                                             FontSize="14"/>
-                                <RadioButton Content="Allow"
-                                             Name="WSearch_Allow"
-                                             GroupName="WSearch"
+                                <RadioButton Content="Install"
+                                             Name="StartAllBack_Install"
+                                             GroupName="StartAllBack"
                                              Margin="25,5,0,0"
                                              Foreground="{DynamicResource TextColor1}"
                                              FontFamily="Fonts/#Sans"
                                              FontSize="14"/>
                             </StackPanel>
 
-                            <TextBlock Text="Widgets Service"
+                            <TextBlock Margin="15,5,0,0">
+                                    <Hyperlink NavigateUri="https://www.startallback.com/"
+                                               RequestNavigate="Hyperlink_RequestNavigate">
+                                        Learn about StartAllBack
+                                    </Hyperlink>
+                            </TextBlock>
+
+                            <TextBlock Text="Start 11 (Free Trial)"
                                        HorizontalAlignment="Left"
                                        VerticalAlignment="Top"
                                        Margin="15,12,0,0"
@@ -1275,9 +1303,9 @@
                                        FontWeight="Medium"
                                        FontSize="16"/>
                             <StackPanel Orientation="Horizontal">
-                                <RadioButton Content="No Change"
-                                             Name="WService_NC"
-                                             GroupName="WService"
+                                <RadioButton Content="Don't Download"
+                                             Name="Start11_NC"
+                                             GroupName="Start11"
                                              IsChecked="True"
                                              HorizontalAlignment="Left"
                                              VerticalAlignment="Top"
@@ -1285,23 +1313,58 @@
                                              Foreground="{DynamicResource TextColor1}"
                                              FontFamily="Fonts/#Sans"
                                              FontSize="14"/>
-                                <RadioButton Content="Disable"
-                                             Name="WService_Disable"
-                                             GroupName="WService"
-                                             Margin="25,5,0,0"
-                                             Foreground="{DynamicResource TextColor1}"
-                                             FontFamily="Fonts/#Sans"
-                                             FontSize="14"/>
-                                <RadioButton Content="Enable"
-                                             Name="WService_Enable"
-                                             GroupName="WService"
+                                <RadioButton Content="Download"
+                                             Name="Start11_Install"
+                                             GroupName="Start11"
                                              Margin="25,5,0,0"
                                              Foreground="{DynamicResource TextColor1}"
                                              FontFamily="Fonts/#Sans"
                                              FontSize="14"/>
                             </StackPanel>
+
+                            <TextBlock Margin="15,5,0,0">
+                                    <Hyperlink NavigateUri="https://www.stardock.com/products/start11/"
+                                               RequestNavigate="Hyperlink_RequestNavigate">
+                                        Learn about Start 11
+                                    </Hyperlink>
+                            </TextBlock>
+
+                            <TextBlock Text="Microsoft PowerToys"
+                                       HorizontalAlignment="Left"
+                                       VerticalAlignment="Top"
+                                       Margin="15,12,0,0"
+                                       Foreground="{DynamicResource TextColor1}"
+                                       FontFamily="Fonts/#Sans"
+                                       FontWeight="Medium"
+                                       FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="Don't Install"
+                                             Name="PowerToys_NC"
+                                             GroupName="PowerToys"
+                                             IsChecked="True"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Top"
+                                             Margin="15,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                                <RadioButton Content="Install"
+                                             Name="PowerToys_Install"
+                                             GroupName="PowerToys"
+                                             Margin="25,5,0,0"
+                                             Foreground="{DynamicResource TextColor1}"
+                                             FontFamily="Fonts/#Sans"
+                                             FontSize="14"/>
+                            </StackPanel>
+
+                            <TextBlock Margin="15,5,0,0">
+                                    <Hyperlink NavigateUri="https://docs.microsoft.com/en-us/windows/powertoys/"
+                                               RequestNavigate="Hyperlink_RequestNavigate">
+                                        Learn about Microsoft PowerToys
+                                    </Hyperlink>
+                            </TextBlock>
                             
-                            <TextBlock Text="Uninstall Cortana"
+                            <TextBlock Text="ThisIsWin11"
                                        HorizontalAlignment="Left"
                                        VerticalAlignment="Top"
                                        Margin="15,12,0,0"
@@ -1310,9 +1373,9 @@
                                        FontWeight="Medium"
                                        FontSize="16"/>
                             <StackPanel Orientation="Horizontal">
-                                <RadioButton Content="No Change"
-                                             Name="Cortana_NC"
-                                             GroupName="Cortana"
+                                <RadioButton Content="Don't Download"
+                                             Name="TIW11_NC"
+                                             GroupName="TIW11"
                                              IsChecked="True"
                                              HorizontalAlignment="Left"
                                              VerticalAlignment="Top"
@@ -1320,14 +1383,21 @@
                                              Foreground="{DynamicResource TextColor1}"
                                              FontFamily="Fonts/#Sans"
                                              FontSize="14"/>
-                                <RadioButton Content="Uninstall"
-                                             Name="Cortana_Uninstall"
-                                             GroupName="Cortana"
+                                <RadioButton Content="Install"
+                                             Name="TIW11_Install"
+                                             GroupName="TIW11"
                                              Margin="25,5,0,0"
                                              Foreground="{DynamicResource TextColor1}"
                                              FontFamily="Fonts/#Sans"
                                              FontSize="14"/>
                             </StackPanel>
+
+                            <TextBlock Margin="15,5,0,0">
+                                    <Hyperlink NavigateUri="https://github.com/builtbybel/ThisIsWin11"
+                                               RequestNavigate="Hyperlink_RequestNavigate">
+                                        Learn about ThisIsWin11
+                                    </Hyperlink>
+                            </TextBlock>
 
                         </StackPanel>
 

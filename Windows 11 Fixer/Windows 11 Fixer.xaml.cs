@@ -274,12 +274,28 @@ namespace Windows_11_Fixer
                 {
                     n_installs = n_installs + 1;
                 }
+                
+                //Start 11
+                if (Start11_Install.IsChecked == true)
+                {
+                    ProcessStartInfo installStart11 = new ProcessStartInfo("https://cdn.stardock.us/downloads/public/software/start/Start11_setup.exe");
+                    installStart11.UseShellExecute = true;
+                    Process.Start(installStart11);
+                }
 
                 //Microsoft PowerToys
                 if (PowerToys_Install.IsChecked == true)
                 {
                     n_installs = n_installs + 1;
                     id_install = "Microsoft.PowerToys";
+                }
+
+                //ThisIsWin11
+                if (TIW11_Install.IsChecked == true)
+                {
+                    ProcessStartInfo installTIW11 = new ProcessStartInfo("https://github.com/builtbybel/ThisIsWin11/releases/download/0.93.0/TIW11.zip");
+                    installTIW11.UseShellExecute = true;
+                    Process.Start(installTIW11);
                 }
 
             //Windows Settings
@@ -568,7 +584,9 @@ namespace Windows_11_Fixer
             Firefox_NC.IsChecked = true;
             Chrome_NC.IsChecked = true;
             StartAllBack_NC.IsChecked = true;
+            Start11_NC.IsChecked = true;
             PowerToys_NC.IsChecked = true;
+            TIW11_NC.IsChecked = true;
             Ssettings_NC.IsChecked = true;
             Osettings_NC.IsChecked = true;
             STheme_NC.IsChecked = true;

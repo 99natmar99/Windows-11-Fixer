@@ -7,6 +7,8 @@
     <UseWPF>true</UseWPF>
     <ApplicationIcon>icon.ico</ApplicationIcon>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
   </PropertyGroup>
 
   <ItemGroup>
