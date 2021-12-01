@@ -15,4 +15,5 @@
 ![screenshot](https://github.com/99natmar99/Windows-11-Fixer/blob/master/web-images/dark.PNG)
 
 ## Download
-[Download](https://github.com/99natmar99/Windows-11-Fixer/releases)
+(Latest Release) [Download](https://github.com/99natmar99/Windows-11-Fixer/releases/tag/v1.1.0)
+
