@@ -76,6 +76,7 @@ namespace Windows_11_Fixer
         {
             var n_installs = 0;
             String id_install = " ";
+            bool restartRequired = false;
 
             //Taskbar Fixes
                 //Taskbar Location
@@ -92,14 +93,17 @@ namespace Windows_11_Fixer
                 if (Size_Small.IsChecked == true)
                 {
                     Registry.SetValue("HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced", "TaskbarSi", "00000000", RegistryValueKind.DWord);
+                    restartRequired = true;
                 }
                 else if (Size_Medium.IsChecked == true)
                 {
                     Registry.SetValue("HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced", "TaskbarSi", "00000001", RegistryValueKind.DWord);
+                    restartRequired = true;
                 }
                 else if (Size_Large.IsChecked == true)
                 {
                     Registry.SetValue("HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced", "TaskbarSi", "00000002", RegistryValueKind.DWord);
+                    restartRequired = true;
                 }
 
                 //Widgets Button
@@ -134,6 +138,7 @@ namespace Windows_11_Fixer
                 if (Context_Win10.IsChecked == true)
                 {
                     Registry.SetValue("HKEY_CURRENT_USER\\Software\\Classes\\CLSID\\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\\InprocServer32", "", "");
+                    restartRequired = true;
                 }
                 else if (Context_Win11.IsChecked == true)
                 {
@@ -141,6 +146,7 @@ namespace Windows_11_Fixer
                     contextdel.UseShellExecute = true;
                     contextdel.Arguments = "REG DELETE \"HKCU\\Software\\Classes\\CLSID\\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\" /f";
                     Process.Start(contextdel);
+                    restartRequired = true;
                 }
 
                 //Take Ownership
@@ -237,6 +243,7 @@ namespace Windows_11_Fixer
                     Pinfo.UseShellExecute = true;
                     Pinfo.Arguments = "REG ADD \"HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Icons\" /v 29 /t REG_SZ /d \"%windir%\\blank.ico\" /f";
                     Process.Start(Pinfo);
+                    restartRequired = true;
                 }
                 else if (Shortcut_Normal.IsChecked == true)
                 {
@@ -244,6 +251,7 @@ namespace Windows_11_Fixer
                     Pinfo1.UseShellExecute = true;
                     Pinfo1.Arguments = "REG ADD \"HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Icons\" /v 29 /t REG_SZ /d \"%windir%\\System32\\shell32.dll,-30\" /f";
                     Process.Start(Pinfo1);
+                    restartRequired = true;
                 }
                 else if (Shortcut_Large.IsChecked == true)
                 {
@@ -251,6 +259,7 @@ namespace Windows_11_Fixer
                     Pinfo2.UseShellExecute = true;
                     Pinfo2.Arguments = "REG ADD \"HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Shell Icons\" /v 29 /t REG_SZ /d \"%windir%\\System32\\shell32.dll,-16769\" /f";
                     Process.Start(Pinfo2);
+                    restartRequired = true;
                 }
 
             //Install Internet Browser
@@ -454,6 +463,7 @@ namespace Windows_11_Fixer
                     searchadd.UseShellExecute = true;
                     searchadd.Arguments = "REG ADD \"HKCU\\SOFTWARE\\Policies\\Microsoft\\Windows\\Explorer\" /v DisableSearchBoxSuggestions /t REG_DWORD /d \"00000001\" /f";
                     Process.Start(searchadd);
+                    restartRequired = true;
                 }
                 else if (WSearch_Allow.IsChecked == true)
                 {
@@ -461,6 +471,7 @@ namespace Windows_11_Fixer
                     searchdel.UseShellExecute = true;
                     searchdel.Arguments = "REG DELETE \"HKCU\\SOFTWARE\\Policies\\Microsoft\\Windows\\Explorer\" /f";
                     Process.Start(searchdel);
+                    restartRequired = true;
                 }
 
                 //Uninstall Cortana
@@ -479,6 +490,7 @@ namespace Windows_11_Fixer
                     widgetsService.UseShellExecute = true;
                     widgetsService.Arguments = "REG ADD \"HKLM\\Software\\Policies\\Microsoft\\Dsh\" /v AllowNewsAndInterests /t REG_DWORD /d \"00000000\" /f";
                     Process.Start(widgetsService);
+                    restartRequired = true;
                 }
                 else if (WService_Enable.IsChecked == true)
                 {
@@ -486,6 +498,7 @@ namespace Windows_11_Fixer
                     widgetsService.UseShellExecute = true;
                     widgetsService.Arguments = "REG ADD \"HKLM\\Software\\Policies\\Microsoft\\Dsh\" /v AllowNewsAndInterests /t REG_DWORD /d \"00000001\" /f";
                     Process.Start(widgetsService);
+                    restartRequired = true;
                 }
 
             //Install Software
@@ -563,8 +576,11 @@ namespace Windows_11_Fixer
 
             if (!isWindowOpen)
             {
-                Restart_Popup newwindow = new Restart_Popup();
-                newwindow.Show();
+                if (restartRequired == true)
+                {
+                    Restart_Popup newwindow = new Restart_Popup();
+                    newwindow.Show();
+                }
             }
 
             //Clear Values
