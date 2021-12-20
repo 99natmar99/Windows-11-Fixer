@@ -1,5 +1,7 @@
 # Windows 11 Fixer
 
+[![Latest Release](https://img.shields.io/github/v/release/99natmar99/Windows-11-Fixer?style=flat-square)](https://github.com/99natmar99/Windows-11-Fixer/releases/tag/v1.1.1) ![Latest Release](https://img.shields.io/github/downloads/99natmar99/Windows-11-Fixer/total?style=flat-square) [![Latest Release](https://img.shields.io/github/license/99natmar99/Windows-11-Fixer?style=flat-square)](https://github.com/99natmar99/Windows-11-Fixer/blob/master/LICENSE)
+
 ### Windows 11 Fixer is a program designed to make customizing your Windows 11 as easy as possible.
 
 ## Features
