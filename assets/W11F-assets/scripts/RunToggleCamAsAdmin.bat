@@ -1,0 +1,1 @@
+start "" "powershell.exe" "Start-Process "C:\WINDOWS\W11F-assets\scripts\ToggleCam.bat" -Verb RunAs"
