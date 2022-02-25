@@ -1,0 +1,915 @@
+﻿<UserControl x:Class="Windows_11_Fixer.MVVM.View.UninstallView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Windows_11_Fixer.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1190">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="15"/>
+                    <ColumnDefinition Width="386.66"/>
+                    <ColumnDefinition Width="15"/>
+                    <ColumnDefinition Width="386.67"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Grid.ColumnSpan="5" Orientation="Vertical">
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Vertical">
+                            <StackPanel>
+                                <Border CornerRadius="4,4,0,0"
+                                        Background="{DynamicResource Button}">
+                                    <StackPanel HorizontalAlignment="Center"
+                                                VerticalAlignment="Top"
+                                                Height="30" Width="381.67">
+                                        <TextBlock Text="Uninstall Windows Software"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Top"
+                                                   Margin="0,4,0,0"
+                                                   Foreground="{DynamicResource TextColor1}"
+                                                   FontFamily="Fonts/#Sans"
+                                                   FontWeight="Bold"
+                                                   FontSize="20"/>
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Grid.Column="0" Orientation="Vertical">
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Vertical">
+                            <Border Width="386.67" Height="610"
+                                                Background="{DynamicResource Color2}"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Top"
+                                                CornerRadius="4"
+                                                Margin="0,45,0,0">
+                                <StackPanel>
+                                    <Border CornerRadius="4,4,0,0"
+                                                        Background="{DynamicResource Button}">
+                                        <StackPanel Orientation="Horizontal"
+                                                                HorizontalAlignment="Left"
+                                                                VerticalAlignment="Top"
+                                                                Height="30" Width="386.67">
+                                            <TextBlock Text="Hard to Uninstall Software"
+                                                                   HorizontalAlignment="Left"
+                                                                   VerticalAlignment="Top"
+                                                                   Margin="5,4,0,0"
+                                                                   Foreground="{DynamicResource TextColor1}"
+                                                                   FontFamily="Fonts/#Sans"
+                                                                   FontWeight="Bold"
+                                                                   FontSize="20"/>
+                                        </StackPanel>
+                                    </Border>
+                                        <TextBlock Text="Camera"
+                                                   HorizontalAlignment="Left"
+                                                   VerticalAlignment="Top"
+                                                   Margin="15,7,0,0"
+                                                   Foreground="{DynamicResource TextColor1}"
+                                                   FontFamily="Fonts/#Sans"
+                                                   FontWeight="Medium"
+                                                   FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="No Change"
+                                                         Name="UN_Camera_NC"
+                                                         GroupName="UN_Camera"
+                                                         IsChecked="True"
+                                                         Margin="15,5,0,0"
+                                                         Foreground="{DynamicResource TextColor1}"
+                                                         FontFamily="Fonts/#Sans"
+                                                         FontSize="14"/>
+                                            <RadioButton Content="Uninstall"
+                                                         Name="UN_Camera_Uninstall"
+                                                         GroupName="UN_Camera"
+                                                         Margin="25,5,0,0"
+                                                         Foreground="{DynamicResource TextColor1}"
+                                                         FontFamily="Fonts/#Sans"
+                                                         FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="Alarms and Clock"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <RadioButton Content="No Change"
+                                                 Name="UN_Alarms_NC"
+                                                 GroupName="UN_Alarms"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                        <RadioButton Content="Uninstall"
+                                                 Name="UN_Alarms_Uninstall"
+                                                 GroupName="UN_Alarms"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                    </StackPanel>
+                                        <TextBlock Text="Cortana"
+                                                   HorizontalAlignment="Left"
+                                                   VerticalAlignment="Top"
+                                                   Margin="15,12,0,0"
+                                                   Foreground="{DynamicResource TextColor1}"
+                                                   FontFamily="Fonts/#Sans"
+                                                   FontWeight="Medium"
+                                                   FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="No Change"
+                                                         Name="UN_Cortana_NC"
+                                                         GroupName="UN_Cortana"
+                                                         IsChecked="True"
+                                                         Margin="15,5,0,0"
+                                                         Foreground="{DynamicResource TextColor1}"
+                                                         FontFamily="Fonts/#Sans"
+                                                         FontSize="14"/>
+                                            <RadioButton Content="Uninstall"
+                                                         Name="UN_Cortana_Uninstall"
+                                                         GroupName="UN_Cortana"
+                                                         Margin="25,5,0,0"
+                                                         Foreground="{DynamicResource TextColor1}"
+                                                         FontFamily="Fonts/#Sans"
+                                                         FontSize="14"/>
+                                        </StackPanel>
+                                    <TextBlock Text="Get Help"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <RadioButton Content="No Change"
+                                                 Name="UN_Help_NC"
+                                                 GroupName="UN_Help"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                        <RadioButton Content="Uninstall"
+                                                 Name="UN_Help_Uninstall"
+                                                 GroupName="UN_Help"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                    </StackPanel>
+                                        <TextBlock Text="Maps"
+                                                   HorizontalAlignment="Left"
+                                                   VerticalAlignment="Top"
+                                                   Margin="15,12,0,0"
+                                                   Foreground="{DynamicResource TextColor1}"
+                                                   FontFamily="Fonts/#Sans"
+                                                   FontWeight="Medium"
+                                                   FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="No Change"
+                                                         Name="UN_Maps_NC"
+                                                         GroupName="UN_Maps"
+                                                         IsChecked="True"
+                                                         Margin="15,5,0,0"
+                                                         Foreground="{DynamicResource TextColor1}"
+                                                         FontFamily="Fonts/#Sans"
+                                                         FontSize="14"/>
+                                            <RadioButton Content="Uninstall"
+                                                         Name="UN_Maps_Uninstall"
+                                                         GroupName="UN_Maps"
+                                                         Margin="25,5,0,0"
+                                                         Foreground="{DynamicResource TextColor1}"
+                                                         FontFamily="Fonts/#Sans"
+                                                         FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="Microsoft Edge"
+                                                   HorizontalAlignment="Left"
+                                                   VerticalAlignment="Top"
+                                                   Margin="15,12,0,0"
+                                                   Foreground="{DynamicResource TextColor1}"
+                                                   FontFamily="Fonts/#Sans"
+                                                   FontWeight="Medium"
+                                                   FontSize="16"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <RadioButton Content="No Change"
+                                                         Name="UN_Edge_NC"
+                                                         GroupName="UN_Edge"
+                                                         IsChecked="True"
+                                                         Margin="15,5,0,0"
+                                                         Foreground="{DynamicResource TextColor1}"
+                                                         FontFamily="Fonts/#Sans"
+                                                         FontSize="14"/>
+                                        <RadioButton Content="Uninstall"
+                                                         Name="UN_Edge_Uninstall"
+                                                         GroupName="UN_Edge"
+                                                         Margin="25,5,0,0"
+                                                         Foreground="{DynamicResource TextColor1}"
+                                                         FontFamily="Fonts/#Sans"
+                                                         FontSize="14"/>
+                                    </StackPanel>
+                                    <TextBlock Text="Photos"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <RadioButton Content="No Change"
+                                                 Name="UN_Photos_NC"
+                                                 GroupName="UN_Photos"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                        <RadioButton Content="Uninstall"
+                                                 Name="UN_Photos_Uninstall"
+                                                 GroupName="UN_Photos"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                    </StackPanel>
+                                    <TextBlock Text="Xbox Game Bar"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <RadioButton Content="No Change"
+                                                 Name="UN_GameBar_NC"
+                                                 GroupName="UN_GameBar"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                        <RadioButton Content="Uninstall"
+                                                 Name="UN_GameBar_Uninstall"
+                                                 GroupName="UN_GameBar"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                    </StackPanel>
+                                    <TextBlock Text="Your Phone"
+                                                   HorizontalAlignment="Left"
+                                                   VerticalAlignment="Top"
+                                                   Margin="15,12,0,0"
+                                                   Foreground="{DynamicResource TextColor1}"
+                                                   FontFamily="Fonts/#Sans"
+                                                   FontWeight="Medium"
+                                                   FontSize="16"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <RadioButton Content="No Change"
+                                                         Name="UN_Phone_NC"
+                                                         GroupName="UN_Phone"
+                                                         IsChecked="True"
+                                                         Margin="15,5,0,0"
+                                                         Foreground="{DynamicResource TextColor1}"
+                                                         FontFamily="Fonts/#Sans"
+                                                         FontSize="14"/>
+                                        <RadioButton Content="Uninstall"
+                                                         Name="UN_Phone_Uninstall"
+                                                         GroupName="UN_Phone"
+                                                         Margin="25,5,0,0"
+                                                         Foreground="{DynamicResource TextColor1}"
+                                                         FontFamily="Fonts/#Sans"
+                                                         FontSize="14"/>
+                                    </StackPanel>
+                                    
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" Grid.ColumnSpan="3" Orientation="Vertical">
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Vertical">
+                            <Border Width="788.33" Height="610"
+                                    Background="{DynamicResource Color2}"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    CornerRadius="4"
+                                    Margin="0,45,0,0">
+                                <StackPanel>
+                                    <Border CornerRadius="4,4,0,0"
+                                            Background="{DynamicResource Button}">
+                                        <StackPanel Orientation="Horizontal"
+                                                    HorizontalAlignment="Left"
+                                                    VerticalAlignment="Top"
+                                                    Height="30" Width="788.33">
+                                            <TextBlock Text="Easy to Uninstall Software"
+                                                       HorizontalAlignment="Left"
+                                                       VerticalAlignment="Top"
+                                                       Margin="5,4,0,0"
+                                                       Foreground="{DynamicResource TextColor1}"
+                                                       FontFamily="Fonts/#Sans"
+                                                       FontWeight="Bold"
+                                                       FontSize="20"/>
+                                        </StackPanel>
+                                    </Border>
+
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" Orientation="Vertical">
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="Calculator"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,82,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_Calculator_NC"
+                                                 GroupName="UN_Calculator"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_Calculator_Uninstall"
+                                                 GroupName="UN_Calculator"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Feedback Hub"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_Feedback_NC"
+                                                 GroupName="UN_Feedback"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_Feedback_Uninstall"
+                                                 GroupName="UN_Feedback"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Movies and TV"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_Movies_NC"
+                                                 GroupName="UN_Movies"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_Movies_Uninstall"
+                                                 GroupName="UN_Movies"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Media Player (Groove Music)"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_Media_NC"
+                                                 GroupName="UN_Media"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_Media_Uninstall"
+                                                 GroupName="UN_Media"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Mail and Calendar"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_Mail_NC"
+                                                 GroupName="UN_Mail"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_Mail_Uninstall"
+                                                 GroupName="UN_Mail"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Microsoft News"
+                                                   HorizontalAlignment="Left"
+                                                   VerticalAlignment="Top"
+                                                   Margin="15,12,0,0"
+                                                   Foreground="{DynamicResource TextColor1}"
+                                                   FontFamily="Fonts/#Sans"
+                                                   FontWeight="Medium"
+                                                   FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                         Name="UN_News_NC"
+                                                         GroupName="UN_News"
+                                                         IsChecked="True"
+                                                         Margin="15,5,0,0"
+                                                         Foreground="{DynamicResource TextColor1}"
+                                                         FontFamily="Fonts/#Sans"
+                                                         FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                         Name="UN_News_Uninstall"
+                                                         GroupName="UN_News"
+                                                         Margin="25,5,0,0"
+                                                         Foreground="{DynamicResource TextColor1}"
+                                                         FontFamily="Fonts/#Sans"
+                                                         FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Microsoft Solitaire"
+                                                   HorizontalAlignment="Left"
+                                                   VerticalAlignment="Top"
+                                                   Margin="15,12,0,0"
+                                                   Foreground="{DynamicResource TextColor1}"
+                                                   FontFamily="Fonts/#Sans"
+                                                   FontWeight="Medium"
+                                                   FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                         Name="UN_Solitaire_NC"
+                                                         GroupName="UN_Solitaire"
+                                                         IsChecked="True"
+                                                         Margin="15,5,0,0"
+                                                         Foreground="{DynamicResource TextColor1}"
+                                                         FontFamily="Fonts/#Sans"
+                                                         FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                         Name="UN_Solitaire_Uninstall"
+                                                         GroupName="UN_Solitaire"
+                                                         Margin="25,5,0,0"
+                                                         Foreground="{DynamicResource TextColor1}"
+                                                         FontFamily="Fonts/#Sans"
+                                                         FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Microsoft Teams"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_Teams_NC"
+                                                 GroupName="UN_Teams"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_Teams_Uninstall"
+                                                 GroupName="UN_Teams"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Microsoft To Do"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_ToDo_NC"
+                                                 GroupName="UN_ToDo"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_ToDo_Uninstall"
+                                                 GroupName="UN_ToDo"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Notepad"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_Notepad_NC"
+                                                 GroupName="UN_Notepad"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_Notepad_Uninstall"
+                                                 GroupName="UN_Notepad"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Paint"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_Paint_NC"
+                                                 GroupName="UN_Paint"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_Paint_Uninstall"
+                                                 GroupName="UN_Paint"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Grid.Column="4" Orientation="Vertical">
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="Power Automate"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,82,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_Automate_NC"
+                                                 GroupName="UN_Automate"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_Automate_Uninstall"
+                                                 GroupName="UN_Automate"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Snipping Tool"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_Snipping_NC"
+                                                 GroupName="UN_Snipping"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_Snipping_Uninstall"
+                                                 GroupName="UN_Snipping"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Sticky Notes"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_Notes_NC"
+                                                 GroupName="UN_Notes"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_Notes_Uninstall"
+                                                 GroupName="UN_Notes"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Voice Recorder"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_Voice_NC"
+                                                 GroupName="UN_Voice"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_Voice_Uninstall"
+                                                 GroupName="UN_Voice"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Weather"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_Weather_NC"
+                                                 GroupName="UN_Weather"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_Weather_Uninstall"
+                                                 GroupName="UN_Weather"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Windows Terminal"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_Terminal_NC"
+                                                 GroupName="UN_Terminal"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_Terminal_Uninstall"
+                                                 GroupName="UN_Terminal"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Xbox"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_Xbox_NC"
+                                                 GroupName="UN_Xbox"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_Xbox_Uninstall"
+                                                 GroupName="UN_Xbox"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Skype"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_Skype_NC"
+                                                 GroupName="UN_Skype"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_Skype_Uninstall"
+                                                 GroupName="UN_Skype"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="OneNote"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_OneNote_NC"
+                                                 GroupName="UN_OneNote"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_OneNote_Uninstall"
+                                                 GroupName="UN_OneNote"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Text="Mixed Reality Portal"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           Margin="15,12,0,0"
+                                           Foreground="{DynamicResource TextColor1}"
+                                           FontFamily="Fonts/#Sans"
+                                           FontWeight="Medium"
+                                           FontSize="16"/>
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton Content="No Change"
+                                                 Name="UN_MixedReality_NC"
+                                                 GroupName="UN_MixedReality"
+                                                 IsChecked="True"
+                                                 Margin="15,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                                <RadioButton Content="Uninstall"
+                                                 Name="UN_MixedReality_Uninstall"
+                                                 GroupName="UN_MixedReality"
+                                                 Margin="25,5,0,0"
+                                                 Foreground="{DynamicResource TextColor1}"
+                                                 FontFamily="Fonts/#Sans"
+                                                 FontSize="14"/>
+                            </StackPanel>
+                            <TextBlock Margin="15,12,0,0">
+                                        <Hyperlink NavigateUri="ms-settings:installed-apps"
+                                                    RequestNavigate="Hyperlink_RequestNavigate">
+                                            Settings Page to Uninstall Apps
+                                        </Hyperlink>
+                            </TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+        
+        <Button Content="Uninstall Software"
+            Foreground="{DynamicResource TextColor1}"
+            FontWeight="Medium"
+            FontSize="16"
+            Grid.Column="25"
+            HorizontalAlignment="Center"
+            Margin="0,15,0,0" Click="Button_Click">
+        <Button.Style>
+            <Style TargetType="Button">
+                <Setter Property="TextElement.FontFamily" Value="Fonts/#Sans"/>
+                <Setter Property="Background" Value="{DynamicResource Button}"/>
+                <Setter Property="Cursor" Value="Hand"/>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="#8D8D93"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Width="152" Height="30"
+                        CornerRadius="4"
+                        Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"
+                                        Margin="0,1,0,0"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+    </StackPanel>
+</UserControl>

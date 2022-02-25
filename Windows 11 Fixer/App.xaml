@@ -2,6 +2,8 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Windows_11_Fixer"
+             xmlns:viewModel="clr-namespace:Windows_11_Fixer.MVVM.ViewModel"
+             xmlns:view="clr-namespace:Windows_11_Fixer.MVVM.View"
              StartupUri="Windows 11 Fixer.xaml">
     <Application.Resources>
         
@@ -9,6 +11,23 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/Windows 11 Fixer;component/Dictionaries/LightTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
+                <view:MainView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:SettingsViewModel}">
+                <view:SettingsView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:UninstallViewModel}">
+                <view:UninstallView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:InstallViewModel}">
+                <view:InstallView/>
+            </DataTemplate>
+
         </ResourceDictionary>
        
     </Application.Resources>

@@ -60,10 +60,10 @@
                            FontWeight="Medium"
                            Margin="8,2,0,0"/>
 
-                    <Button Content="✖"
+                <Button Content="×"
                         Foreground="{DynamicResource TextColor1}"
                         FontWeight="Medium"
-                        FontSize="11"
+                        FontSize="25"
                         Grid.Column="27" Click="Button_Click"
                         Margin="12,0,0,0">
 
@@ -87,7 +87,7 @@
                                     Background="{TemplateBinding Background}">
                                     <ContentPresenter VerticalAlignment="Center"
                                                   HorizontalAlignment="Center"
-                                                  Margin="0,2,0,0"/>
+                                                  Margin="0,-4,0,0"/>
                                 </Border>
                             </ControlTemplate>
                         </Button.Template>

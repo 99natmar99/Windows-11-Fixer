@@ -52,6 +52,7 @@ Enable: HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection
 	MaxTelemetryAllowed			Set DWORD = 3
 	HKCU\Software\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack
 	ShowedToastAtLevel			Set DWORD = 3
+
 Settings -> Privacy & security -> Diagnostics & feedback -> Tailored experiences
 Disable: HKCU\Software\Microsoft\Windows\CurrentVersion\Privacy
        TailoredExperiencesWithDiagnosticDataEnabled		Set DWORD = 0

@@ -12,17 +12,36 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\GitHub_b.png" />
+    <None Remove="Images\GitHub_Logo.png" />
+    <None Remove="Images\GitHub_Logo_White.png" />
+    <None Remove="Images\GitHub_w.png" />
+    <None Remove="Images\GitHub_white.png" />
+    <None Remove="Images\icon.ico" />
     <None Remove="Images\icon.png" />
     <None Remove="Images\icon1.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\GitHub_Logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\GitHub_Logo_White.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\icon1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MVVM\Model\" />
   </ItemGroup>
 
 </Project>

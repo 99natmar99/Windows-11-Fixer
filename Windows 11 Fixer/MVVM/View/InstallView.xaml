@@ -1,0 +1,1699 @@
+﻿<UserControl x:Class="Windows_11_Fixer.MVVM.View.InstallView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Windows_11_Fixer.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1190">
+    <StackPanel Orientation="Vertical">
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled"
+                      Height="655"
+                      Width="1190"
+                      Style="{DynamicResource Scroll}">
+
+            <StackPanel Orientation="Horizontal">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="15"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="15"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="5"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Grid.Column="0" Orientation="Vertical">
+                        <StackPanel Orientation="Vertical">
+                            <StackPanel Orientation="Vertical">
+                                <Border Width="381.67" Height="655"
+                                        Background="{DynamicResource Color2}"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Top"
+                                        CornerRadius="4"
+                                        Margin="0,0,0,0">
+                                    <StackPanel>
+                                        <Border CornerRadius="4,4,0,0"
+                                                Background="{DynamicResource Button}">
+                                            <StackPanel Orientation="Horizontal"
+                                                        HorizontalAlignment="Left"
+                                                        VerticalAlignment="Top"
+                                                        Height="30" Width="381.67">
+                                                <TextBlock Text="Windows Modification Software"
+                                                           HorizontalAlignment="Left"
+                                                           VerticalAlignment="Top"
+                                                           Margin="5,4,0,0"
+                                                           Foreground="{DynamicResource TextColor1}"
+                                                           FontFamily="Fonts/#Sans"
+                                                           FontWeight="Bold"
+                                                           FontSize="20"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <TextBlock Text="StartAllBack"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,7,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="StartAllBack_DI"
+                                            GroupName="StartAllBack"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="StartAllBack_Install"
+                                            GroupName="StartAllBack"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+
+                                        <TextBlock Margin="15,5,15,0" TextWrapping="Wrap" Foreground="{DynamicResource TextColor1}">
+                                            StartAllBack is a program which allows for customization of the start menu, taskbar, file explorer, context menus, and more.
+                                        </TextBlock>
+                                        <TextBlock Margin="15,2,0,0">
+                    <Hyperlink NavigateUri="https://www.startallback.com/"
+                                RequestNavigate="Hyperlink_RequestNavigate">
+                        Learn more about StartAllBack
+                    </Hyperlink>
+                                        </TextBlock>
+
+                                        <TextBlock Text="Start11"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Start11_DI"
+                                            GroupName="Start11"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Start11_Install"
+                                            GroupName="Start11"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+
+                                        <TextBlock Margin="15,5,15,0" TextWrapping="Wrap" Foreground="{DynamicResource TextColor1}">
+                                            Start11 is a program which allows for customization of the start menu, taskbar, context menus, and more.
+                                        </TextBlock>
+                                        <TextBlock Margin="15,2,0,0">
+                    <Hyperlink NavigateUri="https://www.stardock.com/products/start11/"
+                                RequestNavigate="Hyperlink_RequestNavigate">
+                        Learn more about Start11
+                    </Hyperlink>
+                                        </TextBlock>
+
+                                        <TextBlock Text="Fences 4"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Fences4_DI"
+                                            GroupName="Fences4"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Fences4_Install"
+                                            GroupName="Fences4"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+
+                                        <TextBlock Margin="15,5,15,0" TextWrapping="Wrap" Foreground="{DynamicResource TextColor1}">
+                                            Fences 4 helps you cleanly organize files, folders, and programs on your desktop.
+                                        </TextBlock>
+                                        <TextBlock Margin="15,2,0,0">
+                    <Hyperlink NavigateUri="https://www.stardock.com/products/fences/"
+                                RequestNavigate="Hyperlink_RequestNavigate">
+                        Learn more about Fences 4
+                    </Hyperlink>
+                                        </TextBlock>
+
+                                        <TextBlock Text="ElevenClock"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="ElevenClock_DI"
+                                            GroupName="ElevenClock"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="ElevenClock_Install"
+                                            GroupName="ElevenClock"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+
+                                        <TextBlock Margin="15,5,15,0" TextWrapping="Wrap" Foreground="{DynamicResource TextColor1}">
+                                            ElevenClock allows for customization of the taskbar clock. Features include displaying clock on multiple monitors and displaying seconds on taskbar clock.
+                                        </TextBlock>
+                                        <TextBlock Margin="15,2,0,0">
+                    <Hyperlink NavigateUri="https://github.com/martinet101/ElevenClock"
+                                RequestNavigate="Hyperlink_RequestNavigate">
+                        Learn more about ElevenClock
+                    </Hyperlink>
+                                        </TextBlock>
+
+                                        <TextBlock Text="ModernFlyouts"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="ModernFlyouts_DI"
+                                            GroupName="ModernFlyouts"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="ModernFlyouts_Install"
+                                            GroupName="ModernFlyouts"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+
+                                        <TextBlock Margin="15,5,15,0" TextWrapping="Wrap" Foreground="{DynamicResource TextColor1}">
+                                            ModernFlyouts provides an alternative flyout design to the existing Windows flyouts (volume, brightness, music control, etc).
+                                        </TextBlock>
+                                        <TextBlock Margin="15,2,0,0">
+                    <Hyperlink NavigateUri="https://modernflyouts-community.github.io/"
+                                RequestNavigate="Hyperlink_RequestNavigate">
+                        Learn more about ModernFlyouts
+                    </Hyperlink>
+                                        </TextBlock>
+
+                                        <TextBlock Text="Microsoft PowerToys"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="PowerToys_DI"
+                                            GroupName="PowerToys"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="PowerToys_Install"
+                                            GroupName="PowerToys"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+
+                                        <TextBlock Margin="15,2,0,0">
+                    <Hyperlink NavigateUri="https://docs.microsoft.com/en-us/windows/powertoys/"
+                                RequestNavigate="Hyperlink_RequestNavigate">
+                        Learn about Microsoft PowerToys
+                    </Hyperlink>
+                                        </TextBlock>
+
+                                    </StackPanel>
+                                </Border>
+                                <Border Width="381.67" Height="450"
+                        Background="{DynamicResource Color2}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        CornerRadius="4"
+                        Margin="0,15,0,0">
+                                    <StackPanel>
+                                        <Border CornerRadius="4,4,0,0"
+                                Background="{DynamicResource Button}">
+                                            <StackPanel Orientation="Horizontal"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Top"
+                                        Height="30" Width="381.67">
+                                                <TextBlock Text="Computer Maintenance Software"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="5,4,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontWeight="Bold"
+                                            FontSize="20"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <TextBlock Text="Malwarebytes"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,7,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Malwarebytes_DI"
+                                            GroupName="Malwarebytes"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Malwarebytes_Install"
+                                            GroupName="Malwarebytes"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+
+                                        <TextBlock Text="CCleaner"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="CCleaner_DI"
+                                            GroupName="CCleaner"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="CCleaner_Install"
+                                            GroupName="CCleaner"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="Speccy"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Speccy_DI"
+                                            GroupName="Speccy"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Speccy_Install"
+                                            GroupName="Speccy"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="RevoUninstaller"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="RevoUninstaller_DI"
+                                            GroupName="RevoUninstaller"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="RevoUninstaller_Install"
+                                            GroupName="RevoUninstaller"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="HWiNFO"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="HWiNFO_DI"
+                                            GroupName="HWiNFO"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="HWiNFO_Install"
+                                            GroupName="HWiNFO"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="CPU-Z"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="CPUZ_DI"
+                                            GroupName="CPUZ"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="CPUZ_Install"
+                                            GroupName="CPUZ"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="WinDirStat"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="WinDirStat_DI"
+                                            GroupName="WinDirStat"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="WinDirStat_Install"
+                                            GroupName="WinDirStat"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="CrystalDiskInfo"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="CrystalDiskInfo_DI"
+                                            GroupName="CrystalDiskInfo"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="CrystalDiskInfo_Install"
+                                            GroupName="CrystalDiskInfo"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2" Grid.ColumnSpan="3" Orientation="Vertical">
+                        <StackPanel Orientation="Vertical">
+                            <StackPanel Orientation="Vertical">
+                                <StackPanel>
+                                    <Border CornerRadius="4"
+                            Background="{DynamicResource Button}">
+                                        <StackPanel
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Height="30" Width="778.33">
+                                            <TextBlock Text="Commonly Installed Software"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Top"
+                                        Margin="5,4,0,0"
+                                        Foreground="{DynamicResource TextColor1}"
+                                        FontFamily="Fonts/#Sans"
+                                        FontWeight="Bold"
+                                        FontSize="20"/>
+                                        </StackPanel>
+                                    </Border>
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2" Orientation="Vertical">
+                        <StackPanel Orientation="Vertical">
+                            <StackPanel Orientation="Vertical">
+                                <Border Width="381.66" Height="190"
+                        Background="{DynamicResource Color2}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        CornerRadius="4"
+                        Margin="0,45,0,0">
+                                    <StackPanel>
+                                        <Border CornerRadius="4,4,0,0"
+                                Background="{DynamicResource Button}">
+                                            <StackPanel Orientation="Horizontal"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Top"
+                                        Height="30" Width="381.66">
+                                                <TextBlock Text="Internet Browsers"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="5,4,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontWeight="Bold"
+                                            FontSize="20"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <TextBlock Text="Mozilla Firefox"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,7,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Firefox_DI"
+                                            GroupName="Firefox"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Firefox_Install"
+                                            GroupName="Firefox"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+
+                                        <TextBlock Text="Google Chrome"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Chrome_DI"
+                                            GroupName="Chrome"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Chrome_Install"
+                                            GroupName="Chrome"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="Opera"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Opera_DI"
+                                            GroupName="Opera"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Opera_Install"
+                                            GroupName="Opera"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                                <Border Width="381.66" Height="295"
+                        Background="{DynamicResource Color2}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        CornerRadius="4"
+                        Margin="0,15,0,0">
+                                    <StackPanel>
+                                        <Border CornerRadius="4,4,0,0"
+                                Background="{DynamicResource Button}">
+                                            <StackPanel Orientation="Horizontal"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Top"
+                                        Height="30" Width="381.66">
+                                                <TextBlock Text="Audio/Video"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="5,4,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontWeight="Bold"
+                                            FontSize="20"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <TextBlock Text="Spotify"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,7,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Spotify_DI"
+                                            GroupName="Spotify"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Spotify_Install"
+                                            GroupName="Spotify"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+
+                                        <TextBlock Text="Amazon Music "
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="AmazonMusic_DI"
+                                            GroupName="AmazonMusic"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="AmazonMusic_Install"
+                                            GroupName="AmazonMusic"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="iTunes"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="iTunes_DI"
+                                            GroupName="iTunes"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="iTunes_Install"
+                                            GroupName="iTunes"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="VLC"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="VLC_DI"
+                                            GroupName="VLC"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="VLC_Install"
+                                            GroupName="VLC"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="Audacity"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Audacity_DI"
+                                            GroupName="Audacity"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Audacity_Install"
+                                            GroupName="Audacity"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                                <Border Width="381.66" Height="295"
+                        Background="{DynamicResource Color2}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        CornerRadius="4"
+                        Margin="0,15,0,0">
+                                    <StackPanel>
+                                        <Border CornerRadius="4,4,0,0"
+                                Background="{DynamicResource Button}">
+                                            <StackPanel Orientation="Horizontal"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Top"
+                                        Height="30" Width="381.66">
+                                                <TextBlock Text="Office"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="5,4,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontWeight="Bold"
+                                            FontSize="20"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <TextBlock Text="Microsoft 365"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,7,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Microsoft365_DI"
+                                            GroupName="Microsoft365"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Microsoft365_Install"
+                                            GroupName="Microsoft365"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+
+                                        <TextBlock Text="LibreOffice"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="LibreOffice_DI"
+                                            GroupName="LibreOffice"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="LibreOffice_Install"
+                                            GroupName="LibreOffice"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="OpenOffice"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="OpenOffice_DI"
+                                            GroupName="OpenOffice"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="OpenOffice_Install"
+                                            GroupName="OpenOffice"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="Foxit PDF Reader"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Foxit_DI"
+                                            GroupName="Foxit"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Foxit_Install"
+                                            GroupName="Foxit"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="Adobe Acrobat Reader DC"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="AdobePDF_DI"
+                                            GroupName="AdobePDF"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="AdobePDF_Install"
+                                            GroupName="AdobePDF"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                                <Border Width="381.66" Height="250"
+                        Background="{DynamicResource Color2}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        CornerRadius="4"
+                        Margin="0,15,0,0">
+                                    <StackPanel>
+                                        <Border CornerRadius="4,4,0,0"
+                                Background="{DynamicResource Button}">
+                                            <StackPanel Orientation="Horizontal"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Top"
+                                        Height="30" Width="381.66">
+                                                <TextBlock Text="Gaming"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="5,4,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontWeight="Bold"
+                                            FontSize="20"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <TextBlock Text="Steam"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,7,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Steam_DI"
+                                            GroupName="Steam"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Steam_Install"
+                                            GroupName="Steam"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+
+                                        <TextBlock Text="Epic Games Launcher"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="EpicGames_DI"
+                                            GroupName="EpicGames"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="EpicGames_Install"
+                                            GroupName="EpicGames"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="Ubisoft Connect"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Ubisoft_DI"
+                                            GroupName="Ubisoft"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Ubisoft_Install"
+                                            GroupName="Ubisoft"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="EA App"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="EA_DI"
+                                            GroupName="EA"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="EA_Install"
+                                            GroupName="EA"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="4" Orientation="Vertical">
+                        <StackPanel Orientation="Vertical">
+                            <StackPanel Orientation="Vertical">
+                                <Border Width="381.67" Height="242.5"
+                        Background="{DynamicResource Color2}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        CornerRadius="4"
+                        Margin="0,45,0,0">
+                                    <StackPanel>
+                                        <Border CornerRadius="4,4,0,0"
+                                Background="{DynamicResource Button}">
+                                            <StackPanel Orientation="Horizontal"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Top"
+                                        Height="30" Width="381.67">
+                                                <TextBlock Text="Messaging"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="5,4,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontWeight="Bold"
+                                            FontSize="20"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <TextBlock Text="Discord"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,7,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Discord_DI"
+                                            GroupName="Discord"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Discord_Install"
+                                            GroupName="Discord"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+
+                                        <TextBlock Text="Microsoft Teams"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Teams_DI"
+                                            GroupName="Teams"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Teams_Install"
+                                            GroupName="Teams"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="Zoom"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Zoom_DI"
+                                            GroupName="Zoom"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Zoom_Install"
+                                            GroupName="Zoom"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="Skype"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Skype_DI"
+                                            GroupName="Skype"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Skype_Install"
+                                            GroupName="Skype"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                                <Border Width="381.67" Height="242.5"
+                        Background="{DynamicResource Color2}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        CornerRadius="4"
+                        Margin="0,15,0,0">
+                                    <StackPanel>
+                                        <Border CornerRadius="4,4,0,0"
+                                Background="{DynamicResource Button}">
+                                            <StackPanel Orientation="Horizontal"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Top"
+                                        Height="30" Width="381.67">
+                                                <TextBlock Text="Streaming"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="5,4,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontWeight="Bold"
+                                            FontSize="20"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <TextBlock Text="Netflix"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,7,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Netflix_DI"
+                                            GroupName="Netflix"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Netflix_Install"
+                                            GroupName="Netflix"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+
+                                        <TextBlock Text="Amazon Prime Video"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="PrimeVideo_DI"
+                                            GroupName="PrimeVideo"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="PrimeVideo_Install"
+                                            GroupName="PrimeVideo"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="Disney+"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Disney_DI"
+                                            GroupName="Disney"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Disney_Install"
+                                            GroupName="Disney"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="Twitch"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Twitch_DI"
+                                            GroupName="Twitch"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Twitch_Install"
+                                            GroupName="Twitch"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                                <Border Width="381.67" Height="138"
+                        Background="{DynamicResource Color2}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        CornerRadius="4"
+                        Margin="0,15,0,0">
+                                    <StackPanel>
+                                        <Border CornerRadius="4,4,0,0"
+                                Background="{DynamicResource Button}">
+                                            <StackPanel Orientation="Horizontal"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Top"
+                                        Height="30" Width="381.67">
+                                                <TextBlock Text="Coding"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="5,4,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontWeight="Bold"
+                                            FontSize="20"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <TextBlock Text="Notepad++"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,7,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Notepad_DI"
+                                            GroupName="Notepad"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Notepad_Install"
+                                            GroupName="Notepad"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+
+                                        <TextBlock Text="Visual Studio Code"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="VSCode_DI"
+                                            GroupName="VSCode"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="VSCode_Install"
+                                            GroupName="VSCode"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                                <Border Width="381.67" Height="197"
+                        Background="{DynamicResource Color2}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        CornerRadius="4"
+                        Margin="0,15,0,0">
+                                    <StackPanel>
+                                        <Border CornerRadius="4,4,0,0"
+                                Background="{DynamicResource Button}">
+                                            <StackPanel Orientation="Horizontal"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Top"
+                                        Height="30" Width="381.67">
+                                                <TextBlock Text="Editing"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="5,4,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontWeight="Bold"
+                                            FontSize="20"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <TextBlock Text="GIMP"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,7,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="GIMP_DI"
+                                            GroupName="GIMP"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="GIMP_Install"
+                                            GroupName="GIMP"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+
+                                        <TextBlock Text="Blender"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Blender_DI"
+                                            GroupName="Blender"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Blender_Install"
+                                            GroupName="Blender"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="Inkscape"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Inkscape_DI"
+                                            GroupName="Inkscape"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Inkscape_Install"
+                                            GroupName="Inkscape"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                                <Border Width="381.66" Height="195"
+                        Background="{DynamicResource Color2}"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        CornerRadius="4"
+                        Margin="0,15,0,0">
+                                    <StackPanel>
+                                        <Border CornerRadius="4,4,0,0"
+                                Background="{DynamicResource Button}">
+                                            <StackPanel Orientation="Horizontal"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Top"
+                                        Height="30" Width="381.66">
+                                                <TextBlock Text="Other"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="5,4,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontWeight="Bold"
+                                            FontSize="20"/>
+                                            </StackPanel>
+                                        </Border>
+                                        <TextBlock Text="WinRAR"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,7,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="WinRAR_DI"
+                                            GroupName="WinRAR"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="WinRAR_Install"
+                                            GroupName="WinRAR"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+
+                                        <TextBlock Text="qBittorrent"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="qBittorrent_DI"
+                                            GroupName="qBittorrent"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="qBittorrent_Install"
+                                            GroupName="qBittorrent"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+
+        <Button Content="Install Software"
+        Foreground="{DynamicResource TextColor1}"
+        FontWeight="Medium"
+        FontSize="16"
+        Grid.Column="25"
+        HorizontalAlignment="Center"
+        Margin="0,15,0,0" Click="Button_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="TextElement.FontFamily" Value="Fonts/#Sans"/>
+                    <Setter Property="Background" Value="{DynamicResource Button}"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#8D8D93"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Width="132" Height="30"
+                                        CornerRadius="4"
+                                        Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center"
+                                                        HorizontalAlignment="Center"
+                                                        Margin="0,1,0,0"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+    </StackPanel>
+</UserControl>
