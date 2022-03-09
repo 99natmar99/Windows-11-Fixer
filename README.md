@@ -1,6 +1,6 @@
-# Windows 11 Fixer <br> [![Latest Release](https://img.shields.io/github/v/release/99natmar99/Windows-11-Fixer?style=flat-square)](https://github.com/99natmar99/Windows-11-Fixer/releases/tag/v2.0.0) [![Latest Release](https://img.shields.io/github/downloads/99natmar99/Windows-11-Fixer/total?style=flat-square)](https://github.com/99natmar99/Windows-11-Fixer/releases/download/v2.0.0/Windows.11.Fixer.v2.0.0.zip) [![Latest Release](https://img.shields.io/github/license/99natmar99/Windows-11-Fixer?style=flat-square)](https://github.com/99natmar99/Windows-11-Fixer/blob/master/LICENSE)
+# Windows 11 Fixer <br> [![Latest Release](https://img.shields.io/github/v/release/99natmar99/Windows-11-Fixer?style=flat-square)](https://github.com/99natmar99/Windows-11-Fixer/releases/tag/v2.1.0) [![Latest Release](https://img.shields.io/github/downloads/99natmar99/Windows-11-Fixer/total?style=flat-square)](https://github.com/99natmar99/Windows-11-Fixer/releases/download/v2.1.0/Windows.11.Fixer.v2.1.0.Portable.zip) [![Latest Release](https://img.shields.io/github/license/99natmar99/Windows-11-Fixer?style=flat-square)](https://github.com/99natmar99/Windows-11-Fixer/blob/master/LICENSE)
 
-![screenshot](https://github.com/99natmar99/Windows-11-Fixer/blob/master/Images/FixWin-Light.png)
+![screenshot](https://github.com/99natmar99/Windows-11-Fixer/blob/master/Images/)
 
 ## About
 Windows 11 Fixer is a program designed to make customizing your Windows 11 as easy as possible. Windows 11 Fixer provides one easy to use location to customize Windows 11, change a large amount of Windows settings (including security settings), uninstall undesired Windows software, and install most of the programs you'll want or need.
@@ -17,17 +17,17 @@ Windows 11 Fixer is a program designed to make customizing your Windows 11 as ea
 ## Downloads
 | Latest Release (v2.1.0) | Portable | Lite |
 |-------------------------|----------|------|
-| [Release Notes](https://github.com/99natmar99/Windows-11-Fixer/releases/tag/v2.0.0) | [Download](https://github.com/99natmar99/Windows-11-Fixer/releases/download/v2.0.0/Windows.11.Fixer.v2.0.0.zip) | [Download](https://github.com/99natmar99/Windows-11-Fixer/releases/download/v2.0.0/Windows.11.Fixer.v2.0.0.zip) |
+| [Release Notes](https://github.com/99natmar99/Windows-11-Fixer/releases/tag/v2.1.0) | [Download](https://github.com/99natmar99/Windows-11-Fixer/releases/download/v2.1.0/Windows.11.Fixer.v2.1.0.Portable.zip) | [Download](https://github.com/99natmar99/Windows-11-Fixer/releases/download/v2.1.0/Windows.11.Fixer.v2.1.0.Lite.zip) |
 
 ## Images
 ### Windows Settings
-![screenshot](https://github.com/99natmar99/Windows-11-Fixer/blob/master/Images/Settings-Dark.png)
+![screenshot](https://github.com/99natmar99/Windows-11-Fixer/blob/master/Images/)
 
 ### Uninstall Microsoft Bloat
-![screenshot](https://github.com/99natmar99/Windows-11-Fixer/blob/master/Images/Uninstall-Light.png)
+![screenshot](https://github.com/99natmar99/Windows-11-Fixer/blob/master/Images/)
 
 ### Install Software
-![screenshot](https://github.com/99natmar99/Windows-11-Fixer/blob/master/Images/Install-Dark.png)
+![screenshot](https://github.com/99natmar99/Windows-11-Fixer/blob/master/Images/)
 
 ## Known Issues
 ### Fix Windows Page
