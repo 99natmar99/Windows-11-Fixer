@@ -15,9 +15,9 @@ Windows 11 Fixer is a program designed to make customizing your Windows 11 as ea
 - Install most commonly used progams, including internet browsers, game launchers, audio and video streaming, etc.
 
 ## Downloads
-| Latest Release (v2.0.0) | Portable |
-|-------------------------|----------|
-| [Release Notes](https://github.com/99natmar99/Windows-11-Fixer/releases/tag/v2.0.0) | [Download](https://github.com/99natmar99/Windows-11-Fixer/releases/download/v2.0.0/Windows.11.Fixer.v2.0.0.zip) |
+| Latest Release (v2.1.0) | Portable | Lite |
+|-------------------------|----------|------|
+| [Release Notes](https://github.com/99natmar99/Windows-11-Fixer/releases/tag/v2.0.0) | [Download](https://github.com/99natmar99/Windows-11-Fixer/releases/download/v2.0.0/Windows.11.Fixer.v2.0.0.zip) | [Download](https://github.com/99natmar99/Windows-11-Fixer/releases/download/v2.0.0/Windows.11.Fixer.v2.0.0.zip) |
 
 ## Images
 ### Windows Settings
