@@ -19,6 +19,8 @@ Windows 11 Fixer is a program designed to make customizing your Windows 11 as ea
 |-------------------------|----------|------|
 | [Release Notes](https://github.com/99natmar99/Windows-11-Fixer/releases/tag/v2.1.0) | [Download](https://github.com/99natmar99/Windows-11-Fixer/releases/download/v2.1.0/Windows.11.Fixer.v2.1.0.Portable.zip) | [Download](https://github.com/99natmar99/Windows-11-Fixer/releases/download/v2.1.0/Windows.11.Fixer.v2.1.0.Lite.zip) |
 
+The Lite version of Windows 11 Fixer requires .NET 5.0 to be installed in order to run. If you do not have this installed, an installer has been included with the program.
+
 ## Images
 ### Windows Settings
 ![screenshot](https://github.com/99natmar99/Windows-11-Fixer/blob/master/Images/Settings-Dark.png)
