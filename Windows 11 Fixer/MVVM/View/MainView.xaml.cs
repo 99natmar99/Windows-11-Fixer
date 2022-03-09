@@ -203,10 +203,34 @@ namespace Windows_11_Fixer.MVVM.View
             {
                 Registry.SetValue("HKEY_CLASSES_ROOT\\DesktopBackground\\Shell\\Toggle Camera/Microphone", "Icon", "%windir%\\W11F-assets\\icons\\webcam.ico");
                 Registry.SetValue("HKEY_CLASSES_ROOT\\DesktopBackground\\Shell\\Toggle Camera/Microphone", "SubCommands", "");
-                Registry.SetValue("HKEY_CLASSES_ROOT\\DesktopBackground\\Shell\\Toggle Camera/Microphone\\Shell\\menu1", "MUIVerb", "Toggle Camera");
+
+                object CStatus = Registry.LocalMachine.OpenSubKey(@"Software\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\webcam").GetValue("Value");
+                string CameraStatus = CStatus.ToString();
+
+                if (CameraStatus == "Allow")
+                {
+                    Registry.SetValue("HKEY_CLASSES_ROOT\\DesktopBackground\\Shell\\Toggle Camera/Microphone\\Shell\\menu1", "MUIVerb", "Toggle Camera Off");
+                }
+                if (CameraStatus == "Deny")
+                {
+                    Registry.SetValue("HKEY_CLASSES_ROOT\\DesktopBackground\\Shell\\Toggle Camera/Microphone\\Shell\\menu1", "MUIVerb", "Toggle Camera On");
+                }
+
                 Registry.SetValue("HKEY_CLASSES_ROOT\\DesktopBackground\\Shell\\Toggle Camera/Microphone\\Shell\\menu1", "Icon", "%windir%\\W11F-assets\\icons\\cam.ico");
                 Registry.SetValue("HKEY_CLASSES_ROOT\\DesktopBackground\\Shell\\Toggle Camera/Microphone\\Shell\\menu1\\command", "", "C:\\WINDOWS\\W11F-assets\\scripts\\RunToggleCamAsAdmin.bat");
-                Registry.SetValue("HKEY_CLASSES_ROOT\\DesktopBackground\\Shell\\Toggle Camera/Microphone\\Shell\\menu2", "MUIVerb", "Toggle Microphone");
+
+                object MStatus = Registry.LocalMachine.OpenSubKey(@"Software\\Microsoft\\Windows\\CurrentVersion\\CapabilityAccessManager\\ConsentStore\\microphone").GetValue("Value");
+                string MicStatus = MStatus.ToString();
+
+                if (MicStatus == "Allow")
+                {
+                    Registry.SetValue("HKEY_CLASSES_ROOT\\DesktopBackground\\Shell\\Toggle Camera/Microphone\\Shell\\menu2", "MUIVerb", "Toggle Microphone Off");
+                }
+                if (MicStatus == "Deny")
+                {
+                    Registry.SetValue("HKEY_CLASSES_ROOT\\DesktopBackground\\Shell\\Toggle Camera/Microphone\\Shell\\menu2", "MUIVerb", "Toggle Microphone On");
+                }
+
                 Registry.SetValue("HKEY_CLASSES_ROOT\\DesktopBackground\\Shell\\Toggle Camera/Microphone\\Shell\\menu2", "Icon", "%windir%\\W11F-assets\\icons\\mic.ico");
                 Registry.SetValue("HKEY_CLASSES_ROOT\\DesktopBackground\\Shell\\Toggle Camera/Microphone\\Shell\\menu2\\command", "", "C:\\WINDOWS\\W11F-assets\\scripts\\RunToggleMicAsAdmin.bat");
             }

@@ -26,7 +26,7 @@
                     <StackPanel Grid.Column="0" Orientation="Vertical">
                         <StackPanel Orientation="Vertical">
                             <StackPanel Orientation="Vertical">
-                                <Border Width="381.67" Height="655"
+                                <Border Width="381.67" Height="765"
                                         Background="{DynamicResource Color2}"
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Top"
@@ -236,6 +236,44 @@
                     <Hyperlink NavigateUri="https://modernflyouts-community.github.io/"
                                 RequestNavigate="Hyperlink_RequestNavigate">
                         Learn more about ModernFlyouts
+                    </Hyperlink>
+                                        </TextBlock>
+
+                                        <TextBlock Text="Files"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Files_DI"
+                                            GroupName="Files"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Files_Install"
+                                            GroupName="Files"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+
+                                        <TextBlock Margin="15,5,15,0" TextWrapping="Wrap" Foreground="{DynamicResource TextColor1}">
+                                            Files provides an alternative file manager for Windows, providing additional features like multiple tabs.
+                                        </TextBlock>
+                                        <TextBlock Margin="15,2,0,0">
+                    <Hyperlink NavigateUri="https://github.com/files-community/Files"
+                                RequestNavigate="Hyperlink_RequestNavigate">
+                        Learn more about Files
                     </Hyperlink>
                                         </TextBlock>
 
@@ -550,7 +588,7 @@
                     <StackPanel Grid.Column="2" Orientation="Vertical">
                         <StackPanel Orientation="Vertical">
                             <StackPanel Orientation="Vertical">
-                                <Border Width="381.66" Height="190"
+                                <Border Width="381.66" Height="295"
                         Background="{DynamicResource Color2}"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
@@ -650,6 +688,60 @@
                                             <RadioButton Content="Install"
                                             Name="Opera_Install"
                                             GroupName="Opera"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="Brave"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Brave_DI"
+                                            GroupName="Brave"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Brave_Install"
+                                            GroupName="Brave"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        <TextBlock Text="Vivaldi"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="Vivaldi_DI"
+                                            GroupName="Vivaldi"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="Vivaldi_Install"
+                                            GroupName="Vivaldi"
                                             Margin="25,5,0,0"
                                             Foreground="{DynamicResource TextColor1}"
                                             FontFamily="Fonts/#Sans"
@@ -979,7 +1071,7 @@
                                         </StackPanel>
                                     </StackPanel>
                                 </Border>
-                                <Border Width="381.66" Height="250"
+                                <Border Width="381.66" Height="255"
                         Background="{DynamicResource Color2}"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
@@ -1468,7 +1560,7 @@
                                         </StackPanel>
                                     </StackPanel>
                                 </Border>
-                                <Border Width="381.67" Height="197"
+                                <Border Width="381.67" Height="242.5"
                         Background="{DynamicResource Color2}"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
@@ -1573,9 +1665,36 @@
                                             FontFamily="Fonts/#Sans"
                                             FontSize="14"/>
                                         </StackPanel>
+                                        <TextBlock Text="IrfanView"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="IrfanView_DI"
+                                            GroupName="IrfanView"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="IrfanView_Install"
+                                            GroupName="IrfanView"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
                                     </StackPanel>
                                 </Border>
-                                <Border Width="381.66" Height="195"
+                                <Border Width="381.66" Height="259.5"
                         Background="{DynamicResource Color2}"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
@@ -1626,6 +1745,34 @@
                                             FontSize="14"/>
                                         </StackPanel>
 
+                                        <TextBlock Text="7-Zip"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Top"
+                                    Margin="15,12,0,0"
+                                    Foreground="{DynamicResource TextColor1}"
+                                    FontFamily="Fonts/#Sans"
+                                    FontWeight="Medium"
+                                    FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <RadioButton Content="Don't Install"
+                                            Name="SevenZip_DI"
+                                            GroupName="SevenZip"
+                                            IsChecked="True"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Top"
+                                            Margin="15,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                            <RadioButton Content="Install"
+                                            Name="SevenZip_Install"
+                                            GroupName="SevenZip"
+                                            Margin="25,5,0,0"
+                                            Foreground="{DynamicResource TextColor1}"
+                                            FontFamily="Fonts/#Sans"
+                                            FontSize="14"/>
+                                        </StackPanel>
+                                        
                                         <TextBlock Text="qBittorrent"
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Top"

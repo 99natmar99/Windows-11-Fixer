@@ -38,7 +38,7 @@ namespace Windows_11_Fixer.MVVM.View
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             int numInstalls = 0;
-            string[] programID = new string[46];
+            string[] programID = new string[51];
 
             //Windows Modification Software
             if (StartAllBack_Install.IsChecked == true)
@@ -69,6 +69,12 @@ namespace Windows_11_Fixer.MVVM.View
             {
                 numInstalls = numInstalls + 1;
                 programID[numInstalls] = "ModernFlyouts.ModernFlyouts";
+            }
+
+            if (Files_Install.IsChecked == true)
+            {
+                numInstalls = numInstalls + 1;
+                programID[numInstalls] = "9nghp3dx8hdx";
             }
 
             if (PowerToys_Install.IsChecked == true)
@@ -145,6 +151,18 @@ namespace Windows_11_Fixer.MVVM.View
             {
                 numInstalls = numInstalls + 1;
                 programID[numInstalls] = "Opera.Opera";
+            }
+
+            if (Brave_Install.IsChecked == true)
+            {
+                numInstalls = numInstalls + 1;
+                programID[numInstalls] = "BraveSoftware.BraveBrowser";
+            }
+
+            if (Vivaldi_Install.IsChecked == true)
+            {
+                numInstalls = numInstalls + 1;
+                programID[numInstalls] = "VivaldiTechnologies.Vivaldi";
             }
 
 
@@ -323,12 +341,24 @@ namespace Windows_11_Fixer.MVVM.View
                 programID[numInstalls] = "Inkscape.Inkscape";
             }
 
+            if (IrfanView_Install.IsChecked == true)
+            {
+                numInstalls = numInstalls + 1;
+                programID[numInstalls] = "IrfanSkiljan.IrfanView";
+            }
+
 
             //Other
             if (WinRAR_Install.IsChecked == true)
             {
                 numInstalls = numInstalls + 1;
                 programID[numInstalls] = "RARLab.WinRAR";
+            }
+
+            if (SevenZip_Install.IsChecked == true)
+            {
+                numInstalls = numInstalls + 1;
+                programID[numInstalls] = "7zip.7zip";
             }
 
             if (qBittorrent_Install.IsChecked == true)
@@ -352,6 +382,7 @@ namespace Windows_11_Fixer.MVVM.View
             Fences4_DI.IsChecked = true;
             ElevenClock_DI.IsChecked = true;
             ModernFlyouts_DI.IsChecked = true;
+            Files_DI.IsChecked = true;
             PowerToys_DI.IsChecked = true;
             Malwarebytes_DI.IsChecked = true;
             CCleaner_DI.IsChecked = true;
@@ -364,6 +395,8 @@ namespace Windows_11_Fixer.MVVM.View
             Firefox_DI.IsChecked = true;
             Chrome_DI.IsChecked = true;
             Opera_DI.IsChecked = true;
+            Brave_DI.IsChecked = true;
+            Vivaldi_DI.IsChecked = true;
             Spotify_DI.IsChecked = true;
             AmazonMusic_DI.IsChecked = true;
             iTunes_DI.IsChecked = true;
@@ -391,7 +424,9 @@ namespace Windows_11_Fixer.MVVM.View
             GIMP_DI.IsChecked = true;
             Blender_DI.IsChecked = true;
             Inkscape_DI.IsChecked = true;
+            IrfanView_DI.IsChecked = true;
             WinRAR_DI.IsChecked = true;
+            SevenZip_DI.IsChecked = true;
             qBittorrent_DI.IsChecked = true;
         }
     }

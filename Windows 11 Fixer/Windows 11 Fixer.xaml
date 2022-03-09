@@ -383,7 +383,7 @@
                                             Click="Button_Click_4"                                     
                                             Style="{DynamicResource ImageButton}">
                                     </Button>
-                                    <TextBlock Text="v2.0.0"
+                                    <TextBlock Text="v2.1.0"
                                                Foreground="{DynamicResource TextColor1}"
                                                VerticalAlignment="Center"
                                                HorizontalAlignment="Center"

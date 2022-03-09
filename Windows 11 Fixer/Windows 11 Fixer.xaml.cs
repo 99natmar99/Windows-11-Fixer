@@ -26,7 +26,26 @@ namespace Windows_11_Fixer
         public MainWindow()
         {
             InitializeComponent();
-            App.Current.Properties["isLight"] = "yes";
+
+            object AppThemeReg = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Themes\\Personalize").GetValue("AppsUseLightTheme");
+            string AppTheme = AppThemeReg.ToString();
+
+            if (AppTheme == "1")
+            {
+                App.Current.Properties["isLight"] = "yes";
+                ResourceDictionary newRes = new ResourceDictionary();
+                newRes.Source = new Uri("pack://application:,,,/Windows 11 Fixer;component/Dictionaries/LightTheme.xaml", UriKind.Absolute);
+                this.Resources.MergedDictionaries.Clear();
+                this.Resources.MergedDictionaries.Add(newRes);
+            }
+            if (AppTheme == "0")
+            {
+                App.Current.Properties["isLight"] = "no";
+                ResourceDictionary newRes = new ResourceDictionary();
+                newRes.Source = new Uri("pack://application:,,,/Windows 11 Fixer;component/Dictionaries/DarkTheme.xaml", UriKind.Absolute);
+                this.Resources.MergedDictionaries.Clear();
+                this.Resources.MergedDictionaries.Add(newRes);
+            }
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
